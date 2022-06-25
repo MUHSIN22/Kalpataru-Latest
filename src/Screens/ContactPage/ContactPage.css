@@ -1,0 +1,101 @@
+.contact-page .contact-banner{
+    background: #FFF6EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 4rem;
+}
+.contact-banner .main-title{
+    text-align: center;
+}
+.contacts{
+    box-shadow: var(--shadow-primary);
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    border-radius: 30px;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 1000px;
+    
+}
+.contact-banner .contact-list{
+    list-style: none;
+}
+.contact-banner .contact-list li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.contact-banner .contact-icon-wrapper{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: #FFF6EA;
+    box-shadow: var(--shadow-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.contact-banner .contact-icon{
+    width: 2.5rem;
+}
+.location-section .location-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.left-cup,
+.right-cup{
+    position: absolute;
+    left: 5%;
+    top: 3rem;
+    width: 8%;
+}
+.right-cup{
+    right: 5%;
+    left: initial;
+}
+@media only screen and (max-width: 1000px) {
+    .contacts{
+        max-width: 100%;
+        width: 100%;
+    }
+    .left-cup,
+    .right-cup{
+        display: none;
+    }
+    .contact-title{
+        font-size: 1rem;
+    }
+    .contact-banner .contact-icon{
+        width: 2rem;
+    }
+    .contact-banner .contact-icon-wrapper{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contacts{
+        flex-direction: column;
+        display: flex;
+        gap: 0;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contacts{
+        padding: 1rem;
+        width: 100%;
+    }
+    .location-section .location-wrapper{
+        margin-top: 1rem;
+    }
+}

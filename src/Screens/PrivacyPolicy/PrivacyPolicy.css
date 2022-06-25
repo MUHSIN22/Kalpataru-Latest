@@ -1,0 +1,131 @@
+.PrivacyPolicy-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.PrivacyPolicy-Banner {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.PrivacyPolicy-Banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+.PrivacyPolicy-Banner-content h1{
+  font-size: 45px;
+  font-weight: 600;
+}
+.PrivacyPolicy-Banner-content p {
+  width: 90%;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+.PrivacyPolicy-Banner-Image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.PrivacyPolicy-Banner-Image img {
+  width: 100%;
+}
+.PrivacyPolicy-Dropdown-Col {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Privacy-Dropdown-Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Privacy-Dropdown-Header h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #d7373d;
+}
+.PrivacyPolicy-Dropdowns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.PrivacyPolicy-Dropdowns p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .PrivacyPolicy-Banner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .PrivacyPolicy-Banner-content{
+    width: 100%;
+  }
+  .PrivacyPolicy-Banner-Image{
+    width: 90%;
+  }
+  .PrivacyPolicy-Banner h1{
+    font-size: 2.5rem;
+  }
+  .PrivacyPolicy-Banner p{
+    font-size: 1.5rem;
+  }
+  .PrivacyPolicy-Dropdown-Col{
+    width: 100%;
+    padding: 1rem;
+  }
+  .PrivacyPolicy-Dropdown-Col h1{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .PrivacyPolicy-Container{
+    margin-top: 1rem;
+  }
+  .PrivacyPolicy-Banner h1{
+    font-size: 1.8rem;
+  }
+  .PrivacyPolicy-Banner p{
+    font-size: 1rem;
+  }
+  .PrivacyPolicy-Dropdown-Col h1{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  /* .PrivacyPolicy-Banner {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .PrivacyPolicy-Banner-Image {
+    width: 100%;
+  }
+  .PrivacyPolicy-Banner-content {
+    width: 100%;
+    gap: 1rem;
+  }
+  .PrivacyPolicy-Banner-content p{
+    width: 100%;
+  }
+  .PrivacyPolicy-Dropdown-Col{
+    width: 95%;
+  } */
+}

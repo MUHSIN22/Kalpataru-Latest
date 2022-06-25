@@ -1,0 +1,121 @@
+.SGB {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.SGB .section-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.SGB .section-1 .section-1-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.SGB .section-1 .section-1-content h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.SGB .section-1 .section-1-content p{
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.SGB .section-1 .sectiom-1-image {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SGB .section-1 .sectiom-1-image img {
+  width: 80%;
+}
+.SGB .mutualFund-header {
+  width: 80%;
+  background-color: #103e60;
+  color: #ffffff;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+.SGB .parent-table {
+  box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 20% 20% 10% 10% 10% 10% 10% 10%;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.parent-table .orange {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent-table .yellow {
+  width: 100%;
+  background-color: #f8b84e;
+}
+.SGB .parent-table .orange h4{
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.parent-table .white {
+  width: 100%;
+  background-color: #ffbe9d;
+  text-align: left;
+  align-items: center;
+}
+.parent-table .white p {
+  margin: 0;
+}
+.border-left {
+  border-left: 4px solid #455a64;
+}
+
+.border-right {
+  border-right: 4px solid #455a64;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #455a64;
+}
+@media only screen and (max-width: 450px) {
+  .SGB .section-1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .SGB .section-1 .sectiom-1-image {
+    width: 100%;
+  }
+  .SGB .section-1 .sectiom-1-image img {
+    width: 100%;
+  }
+  .SGB .section-1 .section-1-content {
+    width: 100%;
+  }
+  .SGB .section-1 .section-1-content p{
+    text-align: justify;
+  }
+  .SGB .mutualFund-header{
+    width: 90%;
+  }
+  .SGB .parent-table{
+    margin-top: 0%;
+  }
+}

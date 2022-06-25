@@ -1,0 +1,225 @@
+.Login-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.Login-Block {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    180deg,
+    #455a64 0%,
+    rgba(197, 63, 63, 0.2) 147.21%
+  );
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+.Block-Image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.Block-Image h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.Block-Image img {
+  width: 95%;
+}
+.Block-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+.Inputs-Col {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  color: #ffff;
+  padding: 1rem;
+}
+.Inputs-Col label {
+  color: #ffff;
+}
+.Inputs-Col input {
+  padding: 1.5rem;
+}
+.Register-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #ffff;
+  cursor: pointer;
+}
+.Register-btn p {
+  color: #ffff;
+}
+.Register-btn a {
+  width: 20%;
+  padding: 0.6rem;
+  text-decoration: none;
+  background-color: #ffff;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+.Forget-Pass {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #ffff;
+}
+.Forget-Pass a {
+  text-decoration: none;
+  color: #ffff;
+}
+.Login-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login-btn button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #455a64;
+  color: #ffff;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.Start-Investing-Container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Start-Investing-Container h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.Start-Investing-Cards-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Investing-Card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Investing-Card h4 {
+  font-size: 25px;
+}
+.Investing-Card img {
+  width: 30%;
+}
+.Documents-Col {
+  width: 82.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.Documents-Col h3 {
+  font-weight: 500;
+}
+.Inputs-Col h3{
+  font-size: 30px;
+}
+.Documents-Row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 500;
+font-size: 1.4rem;
+}
+.Login-Container .Documents-Row .ro1-1{
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1030px) {
+  .Register-btn a {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Login-Block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Block-Image {
+    width: 100%;
+  }
+  .Block-Image img {
+    width: 100%;
+  }
+  .Block-inputs {
+    width: 100%;
+    padding: 0%;
+  }
+  .Inputs-Col {
+    gap: 1rem;
+  }
+  .Register-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Register-btn a {
+    width: 40%;
+  }
+  .Start-Investing-Container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .Investing-Card {
+    width: 100%;
+  }
+  .Documents-Row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Document-Row-CheckBox {
+    width: 100%;
+  }
+}

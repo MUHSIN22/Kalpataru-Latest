@@ -1,0 +1,139 @@
+.InvestorCharter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+.InvestorCharter .section1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.InvestorCharter .section1 .section-1-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InvestorCharter .section1 .section-1-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.InvestorCharter .span{
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+}
+.InvestorCharter span{
+  width: 100%;
+  color:#d7373d;
+display: flex;
+align-items: flex-start;
+
+}
+.InvestorCharter .section1 .section-1-content p{
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.InvestorCharter .section1 .section-1-image{
+    width: 50%;
+}
+.InvestorCharter .section1 .section-1-image img{
+    width: 60%;
+}
+.InvestorCharter  .mutualFund-header {
+    width: 80%;
+    background-color: #103e60;
+    color: #ffffff;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .InvestorCharter .parent-table {
+    box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 10% 30% 10% 10% 20%;
+    margin-top: 4rem;
+    width: 80%;
+  }
+  
+  .InvestorCharter .parent-table .orange {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .InvestorCharter  .parent-table .white {
+    width: 100%;
+    background-color: #ffbe9d;
+    text-align: left;
+    padding: 0.3rem;
+    align-items: center;
+  }
+  
+  .InvestorCharter .parent-table .orange h4{
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .InvestorCharter  .white p {
+    margin: 0;
+  }
+  .border-left {
+    border-left: 4px solid #455a64;
+  }
+  
+  .border-right {
+    border-right: 4px solid #455a64;
+  }
+  
+ .border-bottom {
+    border-bottom: 4px solid #455a64;
+  }
+  @media only screen and (max-width: 450px) {
+    .InvestorCharter .section1 {
+      width: 95%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .InvestorCharter .section1 .section-1-image {
+      width: 100%;
+    }
+    .InvestorCharter .section1 .section-1-image img {
+      width: 100%;
+    }
+    .InvestorCharter .section1 .section-1-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .InvestorCharter .section1 .section-1-content h1 {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+    }
+    .InvestorCharter .section1 .section-1-content p{
+      width: 100%;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .InvestorCharter .mutualFund-header{
+      width:95%;
+      
+    }
+    .InvestorCharter .parent-table{
+      margin-top: 2rem;
+    }
+  }

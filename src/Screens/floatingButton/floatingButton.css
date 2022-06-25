@@ -1,0 +1,25 @@
+.FlotingButton {
+
+    position: absolute;
+    left: 90%;
+    top: 75%;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    
+  
+}
+
+.FlotingButton .flotingButton a {
+    position: fixed;
+    width: 10%;
+    background-color: #103E60;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem;
+border-radius: 0.2rem;
+    text-align: center;
+}
+.FlotingButton .flotingButton a:hover{
+    background-color: #d7373d;
+}

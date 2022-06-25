@@ -1,0 +1,83 @@
+.Accordion-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Accordion-Dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Accordion-Trigger {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #455a64;
+  padding: 2rem;
+  color: #ffff;
+}
+.A-Trigger {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+}
+.A-Trigger svg{
+  width: 40px;
+  height: 40px;
+}
+.Accordion-Target {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 8rem;
+  background-color: #fff6ea;
+  border-radius: 10px;
+  gap: 1rem;
+  min-width: fit-content;
+}
+.Accordion-Target p {
+  width: 100%;
+  text-align: left;
+}
+.Accordion-Upper-Cup {
+  width: 8%;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.Accordion-Bottom-Cup {
+  width: 8%;
+  position: absolute;
+  top: 80%;
+  right: 6%;
+}
+@media only screen and (max-width: 550px){
+  
+}
+@media only screen and (max-width: 450px) {
+  .Accordion-Trigger h2 {
+    font-size: 1.3em;
+  }
+  .Accordion-Target {
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+  }
+  .Accordion-Upper-Cup {
+    display: none;
+  }
+  .Accordion-Bottom-Cup {
+    display: none;
+  }
+}

@@ -1,0 +1,400 @@
+.services-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-page .banner-secondary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.services-page .section-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.services-page .section-1 .section-1-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.services-page .section-1 .section-1-content h1{
+font-size: 3rem;
+font-weight: 600;
+
+}
+.services-page .section-1 .section-1-content p{
+    font-size: 2rem;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+}
+.services-page .section-1 .section-1-image{
+    width: 40%;
+}
+.services-page .section-1 .section-1-image img{
+    width: 80%;
+}
+
+.services-page .service-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.services-page .service-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.services-page .service-wrapper .service-accordion{
+    width: 100%;
+}
+.services-page .service-wrapper .service-accordion p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.services-page .card-content p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.services-page .main-title {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.services-page .bond-card {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: 'image main''sub sub';
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: -15px -15px 20px rgba(197, 63, 63, 0.3), 15px 15px 20px rgba(0, 0, 0, 0.25);
+    max-width: 1000px;
+    margin-top: 3rem;
+}
+.service-wrapper h1{
+  margin-top: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+.services-page .main-content {
+    grid-area: main;
+}
+.services-page .main-content p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.services-page .main-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.services-page .sub-content h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.services-page .sub-content p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.services-page .section-1-content a {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #d7373d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.services-page .bond-img {
+    grid-area: image;
+    width: 100%;
+    margin-top: -8rem;
+}
+
+.services-page .sub-content {
+    grid-area: sub;
+}
+
+.services-page .pention-schema-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content';
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 4rem;
+}
+
+.services-page .top-card,
+.services-page .bottom-card {
+    width: 100%;
+    grid-area: content;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.services-page .top-card {
+    transform: translateX(-5%);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'image content';
+    background: #fff;
+    box-shadow: var(--shadow-primary);
+    border-radius: 80px;
+}
+
+.services-page .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.services-page .card-content .section-para {
+    margin: 1rem 0;
+}
+
+.services-page .btn-see-more {
+    padding: 1rem;
+    background: #37474F;
+    width: clamp(10rem, 50%, 100%);
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.services-page .pension-img {
+    grid-area: image;
+    width: 100%;
+    margin-left: -4rem;
+}
+
+.services-page .bottom-card {
+    background:#37474F;
+    transform: translateX(5%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 80px;
+}
+.services-page .bottom-card p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.services-page .bottom-card .btn-see-more {
+    background: #fff;
+    color: #000;
+    margin: 1rem 0;
+}
+
+
+
+.services-page .section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -15px -15px 20px rgba(197, 63, 63, 0.3),
+    15px 15px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.services-page .section-2 p{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.services-page .section-2 .section-2-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.services-page .section-2 .section-2-content .section-2-image {
+  width: 90%;
+  position: relative;
+  left: -2rem;
+  top: -2rem;
+}
+
+.services-page .section-2 .section-2-content .section-2-image img {
+  width: 100%;
+}
+
+.services-page .section-2 .section-2-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.services-page .section-2 .section-2-content .section-2-col {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .services-page .pension-img {
+        margin-left: 0;
+    }
+
+    .services-page .top-card {
+        grid-gap: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .services-page .bond-card {
+        margin-top: 2rem;
+    }
+
+    .services-page .bond-img {
+        margin-top: -4rem;
+    }
+
+    .pention-schema-grid {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .services-page .service-wrapper{
+      gap: 1rem;
+    }
+    .services-page .section-1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services-page .bond-card {
+      grid-template-columns: 1fr;
+      grid-template-areas: "image" "main" "sub";
+      padding: 1rem;
+      box-shadow: -4px -4px 20px rgba(197, 63, 63, 0.3),
+        15px 15px 20px rgba(0, 0, 0, 0.25);
+    }
+    .services-page .section-1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .services-page .section-1 .section-1-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services-page .section-1 .section-1-content h1 {
+      width: 100%;
+      font-size: 35px;
+      text-align: center;
+    }
+    .services-page .section-1 .section-1-content p {
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+    }
+    .services-page .section-1-content a {
+      width: 90%;
+      font-size: 1rem;
+    }
+    .service-wrapper h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+    }
+    .services-page .service-wrapper h2{
+      width: 100%;
+      font-size: 1rem;
+    }
+    .services-page .section-1 .section-1-image {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services-page .section-1 .section-1-image img {
+      width: 100%;
+    }
+    .services-page .main-title {
+      margin: 1.5rem 0;
+    }
+    .services-page .service-wrapper .service-accordion p{
+      font-size: 1rem;
+    }
+    .services-page .top-card {
+      grid-area: "content";
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+    .services-page .bottom-card{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .services-page .pention-schema-grid{
+      margin-top: 0%;
+    }
+    .services-page .bottom-card p{
+      font-size: 1rem;
+    }
+    .services-page .card-content p{
+      font-size: 1rem;
+    }
+    .services-page .main-content h1{
+      font-size: 30px;
+      margin-top: 0%;
+    }
+    .services-page .main-content p{
+      font-size: 1rem;
+    }
+    .services-page .sub-content h3{
+      font-size: 1.3rem;
+    }
+    .services-page .sub-content p{
+      font-size: 1rem;
+    }
+  }

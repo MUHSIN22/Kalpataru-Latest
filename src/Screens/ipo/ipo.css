@@ -1,0 +1,252 @@
+.ipo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ipo-container .ipo-section-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ipo-container .ipo-section-1 .section-1-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.ipo-container .ipo-section-1 .section-1-content p {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.ipo-container .ipo-section-1 .section-1-content h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.ipo-container .ipo-section-1 .section-1-image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.ipo-container .ipo-section-1 .section-1-image img {
+  width: 80%;
+}
+
+.ipo-container .ipo-section-1 .section-1-content a {
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #d7373d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.ipo-container .section-1-content span{
+  color: #d7373d;
+}
+.ipo-container .section-2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -15px -15px 20px rgba(197, 63, 63, 0.3),
+    15px 15px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.ipo-container .section-2 p{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.ipo-container .section-2 .section-2-content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ipo-container .section-2 .section-2-content .section-2-image {
+  width: 50%;
+  position: relative;
+  left: 4rem;
+  top: -5rem;
+}
+
+.ipo-container .section-2 .section-2-content .section-2-image img {
+  width: 80%;
+}
+
+.ipo-container .section-2 .section-2-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.ipo-container .section-2 .section-2-content .section-2-col {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.ipo-container .section-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ipo-container .section-3 .mutualFund-header {
+  width: 80%;
+  background-color: #103e60;
+  color: #ffffff;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+.ipo-container .parent-table {
+  box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 15% 15% 10% 10%;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.parent-table .orange {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent-table .yellow {
+  width: 100%;
+  background-color: #f8b84e;
+}
+.parent-table .white {
+  width: 100%;
+  background-color: #ffbe9d;
+  text-align: left;
+  align-items: center;
+}
+.parent-table .white p {
+  margin: 0;
+}
+.ipo-container .parent-table .orange h4{
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.border-left {
+  border-left: 4px solid #455a64;
+}
+
+.border-right {
+  border-right: 4px solid #455a64;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #455a64;
+}
+@media only screen and (max-width: 450px) {
+  .ipo-container .ipo-section-1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .ipo-container .ipo-section-1 .section-1-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ipo-container .ipo-section-1 .section-1-image img {
+    width: 100%;
+  }
+  .ipo-container .ipo-section-1 .section-1-content {
+    width: 100%;
+    gap: 1rem;
+  }
+  .ipo-container .ipo-section-1 .section-1-content p {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0%;
+  }
+  .ipo-container .section-2 p{
+font-size: 1rem;
+  }
+  .ipo-container .ipo-section-1 .section-1-content a {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+  .ipo-container .section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .ipo-container .section-2 .section-2-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .ipo-container .section-2 .section-2-content .section-2-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+  }
+  .ipo-container .section-2 .section-2-content .section-2-image img {
+    width: 100%;
+  }
+  .ipo-container .section-2 .section-2-content .section-2-col {
+    width: 100%;
+    margin-top: 13rem;
+  }
+  .ipo-container .section-3 .mutualFund-header {
+    width: 90%;
+  }
+  .ipo-container .parent-table{
+    overflow: scroll;
+    box-shadow: 0 4px 28px 0 rgb(31 38 135 / 30%);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 15% 15% 10% 10%;
+    margin-top: 2rem;
+    width: 95%;
+  }
+  .ipo-container .parent-table .orange h4{
+    font-size: 0.8rem;
+  }
+  .ipo-container .parent-table .white p{
+    font-size: 0.8rem;
+  }
+}

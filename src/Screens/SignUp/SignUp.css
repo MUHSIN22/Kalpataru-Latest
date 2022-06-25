@@ -1,0 +1,153 @@
+.SignUp-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.SignUp-Block {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    180deg,
+    #455a64 0%,
+    rgba(197, 63, 63, 0.2) 147.21%
+  );
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+.SignUp-Inputs-Col h3{
+  font-size: 30px;
+}
+.SignUp-Block-Image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.SignUp-Block-Image h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.SignUp-Block-Image img {
+  width: 90%;
+}
+.SignUp-Block-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.SignUp-Inputs-Col label {
+  color: #ffff;
+}
+.SignUp-Inputs-Col input {
+  padding: 1.5rem;
+}
+.SignUp-Inputs-Col {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffff;
+  padding: 1rem;
+  gap: 1rem;
+}
+.SignUp-Register-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #ffff;
+}
+.SignUp-Register-btn a {
+  width: 20%;
+  padding: 0.6rem;
+  text-decoration: none;
+  background-color: #ffff;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+.SignUp-Forget-Pass {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #ffff;
+}
+.SignUp-Forget-Pass a {
+  text-decoration: none;
+  color: #ffff;
+}
+.SignUp-Login-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SignUp-Login-btn button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #455a64;
+  color: #ffff;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.SignUp-Container .Documents-Col {
+  width: 82.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.SignUp-Container .Documents-Col .Documents-Row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 500;
+font-size: 1.4rem;
+}
+.rol-1{
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 450px) {
+  .SignUp-Block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .SignUp-Block-Image {
+    width: 100%;
+  }
+  .SignUp-Block-inputs {
+    width: 100%;
+  }
+  .SignUp-Inputs-Col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+  }
+}

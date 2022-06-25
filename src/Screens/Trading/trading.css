@@ -1,0 +1,298 @@
+.Trading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Trading .trading-section-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Trading .trading-section-1 .trading-section-1-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.Trading .trading-section-1 .trading-section-1-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.Trading .trading-section-1 .trading-section-1-content p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.Trading .trading-section-1 .trading-section-1-image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Trading .trading-section-1 .trading-section-1-image img {
+  width: 70%;
+}
+
+.Trading .trading-section-1 a {
+  width: 40%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #d7373d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Trading .trading-section-2 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Trading .trading-section-2 h1 {
+  width: 80%;
+  background-color: #df6951;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.Trading .trading-section-2 img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+.Trading .trading-section-2 h1 {
+  width: 100%;
+  background-color: #df6951;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.Trading .trading-section-2 p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Volkhov";
+}
+.Trading .trading-section-3 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Trading .trading-section-3 h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.Trading .trading-section-3 p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.Trading .trading-section-3 .contect-info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+.Trading .trading-section-3 .contect-info-content h5 {
+  width: 100%;
+}
+.trading-section-4 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #455a64;
+  border-radius: 436px 0px 0px 436px;
+  height: 60vh;
+}
+
+.Trading .trading-section-4 img {
+  width: 40%;
+}
+.Trading .trading-section-4 .section-4-content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  gap: 2rem;
+  text-align: left;
+}
+.Trading .trading-section-4 .section-4-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.Trading .trading-section-4 .section-4-content p {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+@media only screen and (max-width: 550px) {
+  .Trading .trading-section-1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Trading .trading-section-1 .trading-section-1-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Trading .trading-section-1 .trading-section-1-image img{
+    width: 100%;
+  }
+  .Trading .trading-section-1 .trading-section-1-content {
+    width: 100%;
+  }
+  .Trading .trading-section-1 .trading-section-1-content h1 {
+    font-size: 2rem;
+  }
+  .Trading .trading-section-1 .trading-section-1-content p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .Trading .trading-section-1 a {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .Trading .trading-section-2 p {
+    font-size: 1.5rem;
+  }
+  .trading-section-4 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 436px 436px 0px 0px;
+  }
+  .Trading .trading-section-4 .section-4-content {
+    width: 95%;
+  }
+  .Trading .trading-section-4 .section-4-content h1 {
+    font-size: 2rem;
+  }
+  .Trading .trading-section-4 img {
+    width: 100%;
+  }
+  .Trading .trading-section-2 h1{
+    font-size: 1.8rem;
+  }
+  .Trading .trading-section-2 p {
+    font-size: 1.3rem;
+  }
+  .Trading .trading-section-3 h1{
+    font-size: 2rem;
+  }
+  .Trading .trading-section-3 p{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .Trading {
+    gap: 1rem;
+  }
+  .Trading .trading-section-1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Trading .trading-section-1 .trading-section-1-content h1 {
+    font-size: 1.8rem;
+  }
+  .Trading .trading-section-1 .trading-section-1-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Trading .trading-section-1 .trading-section-1-image img {
+    width: 100%;
+  }
+  .Trading .trading-section-1 .trading-section-1-content {
+    width: 100%;
+  }
+  .Trading .trading-section-1 .trading-section-1-content p {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .Trading .trading-section-1 a {
+    width: 80%;
+    padding: 0.5rem;
+  }
+  .Trading .trading-section-2 {
+    width: 95%;
+  }
+  .Trading .trading-section-2 h2 {
+    padding: 0.8rem;
+  }
+  .Trading .trading-section-2 p {
+    font-size: 1.1rem;
+  }
+  .trading-section-4 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 436px 436px 0px 0px;
+  }
+  .Trading .trading-section-4 .section-4-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Trading .trading-section-4 .section-4-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .Trading .trading-section-4 img {
+    width: 100%;
+  }
+  .Trading .trading-section-4 .section-4-content {
+    width: 95%;
+    text-align: left;
+  }
+  .Trading .trading-section-3 {
+    width: 95%;
+    gap: 1rem;
+  }
+  .Trading .trading-section-2 h1 {
+    font-size: 1.5rem;
+  }
+  .Trading .trading-section-3 h1 {
+    font-size: 2rem;
+    margin-bottom: 0%;
+  }
+  .Trading .trading-section-3 p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}

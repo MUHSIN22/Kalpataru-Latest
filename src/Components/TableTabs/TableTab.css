@@ -1,0 +1,62 @@
+.TableTab-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.TableTab-container  .TableTab-section{
+    width: 100%;
+    background: #FFF6EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow: scroll;
+}
+.TableTab-container  .TableTab-btns-wrapper{
+    display: flex;
+    align-items: stretch;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-around;
+}
+.TableTab-container  .TableTab-section .TableTab-btn-tbl{
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow-primary);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.TableTab-container .TableTab-section .Table-ActiveTab{
+    color: #FFF6EA;
+    background-color: #103E60;
+}
+.TableTab-container  .TableTab-section .TableTab-v-line-red{
+    width: 4px;
+    height: 3rem;
+    background:#d7373d;
+}
+.TableTab-container .TableTab-section .TableTab-btns-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 3rem;
+    overflow-x: scroll;
+}
+.TableTab-container  .TableTab-section .TableTab-btns-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.TableTab-table-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Margin-Cal {
+    width: 100%;
+}

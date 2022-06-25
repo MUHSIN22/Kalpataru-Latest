@@ -1,0 +1,148 @@
+.Download-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.Download-Banner {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Download-Banner-Content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.Download-Banner-Content h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.Download-Banner-Content p {
+  width: 70%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+.Download-Banner-Image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Download-Banner-Image img {
+  width: 70%;
+}
+.Download-Block {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Download-Block-Header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #455a64;
+  padding: 1.5rem;
+  color: #ffff;
+}
+.Download-Block-Header h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.Download-Block-Content-row {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff9f1;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Download-btn {
+  background-color: transparent;
+  border: none;
+  color: #c53f3f;
+}
+.Download-btn a{
+  color: #c53f3f;
+}
+.Download-btn svg {
+  width: 2em;
+  height: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .Download-Banner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .Download-Banner-Content{
+    width: 100%;
+  }
+  .Download-Banner-Image{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .Download-Banner-Image img{
+    margin: auto;
+  }
+  .Download-Banner h1{
+    font-size: 2.5rem;
+  }
+  .Download-Banner p{
+    font-size: 1.5rem;
+  }
+  .Download-Block{
+    width: 100%;
+  }
+  .Download-Block h2{
+    font-size: 1.3rem;
+  }
+  .Download-Block h3{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Download-Container{
+    margin-top: 1rem;
+  }
+  .Download-Banner h1{
+    font-size: 1.8rem;
+  }
+  .Download-Banner p{
+    font-size: 1rem;
+  }
+  .Download-Banner-Image{
+    margin-top: 1rem;
+  }
+  .Download-Banner-Image img{
+    width: 90%;
+  }
+  .Download-Banner-Content{
+    gap: 1rem;
+  }
+  .Download-Block{
+    gap: 0.5rem;
+  }
+  .Download-Block h2{
+    font-size: 1.1rem;
+  }
+  .Download-Block h3{
+    font-size: 0.9rem;
+  }
+}

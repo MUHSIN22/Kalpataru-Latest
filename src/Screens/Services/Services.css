@@ -28,12 +28,11 @@
     gap: 1rem;
 }
 .services-page .section-1 .section-1-content h1{
-font-size: 3rem;
-font-weight: 600;
-
+    font-size: 2.8rem;
+    font-weight: 600;
 }
 .services-page .section-1 .section-1-content p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     width: 80%;
     text-align: center;
@@ -54,14 +53,14 @@ font-weight: 600;
     gap: 2rem;
 }
 .services-page .service-wrapper h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .services-page .service-wrapper .service-accordion{
     width: 100%;
 }
 .services-page .service-wrapper .service-accordion p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 .services-page .card-content p{
@@ -89,7 +88,7 @@ font-weight: 600;
 }
 .service-wrapper h1{
   margin-top: 0;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 600;
 }
 
@@ -102,7 +101,7 @@ font-weight: 600;
     font-weight: 500;
 }
 .services-page .main-content h1{
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 600;
 }
 .services-page .sub-content h3{
@@ -115,8 +114,8 @@ font-weight: 600;
 }
 .services-page .section-1-content a {
     width: 60%;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
     background-color: #d7373d;
     color: #ffffff;
     border: none;

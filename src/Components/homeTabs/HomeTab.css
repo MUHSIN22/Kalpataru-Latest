@@ -28,7 +28,7 @@
   padding: 1rem;
   background-color: #f7f4f2;
   border: 2px dashed #8989a2;
-  font-size: 20px;
+  font-size: 17px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@
 
 .Target-NSE h1 {
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   background-color: #103e60;
   color: #ffff;
@@ -76,7 +76,7 @@
 
 .Target-BSE h1 {
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   font-weight: 400;
   background-color: #103e60;
@@ -94,7 +94,7 @@
 
 .Target-MCX h1 {
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   font-weight: 400;
   background-color: #103e60;

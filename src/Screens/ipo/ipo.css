@@ -23,9 +23,9 @@
 }
 
 .ipo-container .ipo-section-1 .section-1-content p {
-  width: 100%;
+  width: 85%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .ipo-container .ipo-section-1 .section-1-content h1{
@@ -45,8 +45,8 @@
 
 .ipo-container .ipo-section-1 .section-1-content a {
   width: 50%;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1.3rem;
   background-color: #d7373d;
   color: #ffffff;
   border: none;

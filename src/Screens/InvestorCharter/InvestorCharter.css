@@ -20,7 +20,7 @@
     align-items: center;
 }
 .InvestorCharter .section1 .section-1-content h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
@@ -37,8 +37,8 @@ align-items: flex-start;
 
 }
 .InvestorCharter .section1 .section-1-content p{
-    width: 60%;
-    font-size: 2rem;
+    width: 50%;
+    font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
 }
@@ -57,13 +57,16 @@ align-items: flex-start;
     text-align: center;
     margin-top: 3rem;
   }
+  .InvestorCharter  .mutualFund-header h1{
+    font-size: 1.8rem;
+  }
   
   .InvestorCharter .parent-table {
     box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 10% 30% 10% 10% 20%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 80%;
   }
   

@@ -34,7 +34,7 @@
 
 .header-container a {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .header-container .btn-nav {
@@ -62,6 +62,7 @@
     left: 0;
     transform: translateY(100%);
     display: none;
+    padding-left: 0;
 }
 
 .header-container .nav-item:hover .nav-dropdown {
@@ -70,7 +71,7 @@
 .nav-item-expand{
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #FFFFFF;
 }
 .nav-item-expand svg{
@@ -96,6 +97,7 @@
      background:  #d7373d;
     list-style: none;
     display: none;
+    padding-left: 0;
 }
 
 .nav-dropdown .dropdown-item:hover .nav-child-drop {

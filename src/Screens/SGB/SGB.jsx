@@ -9,7 +9,10 @@ export default function SGB() {
         <div className="section-1-content">
           <h1>Sovereign Gold Bonds</h1>
           <p>
-            SGBs are gold-denominated government securities. They serve as a substitute for owning gold in the form of coins. There is a cash payment for the issue price of a bond, and it is repaid in cash at maturity. The Reserve Bank of India issues the Bond on behalf of the Indian government.
+            A sovereign gold bond (SGB) is a government security denominated in kilos of gold. 
+            This is an alternative to keeping gold in the form of paper currency. Cash is required from 
+            investors to cover the issue price, and investors will get cash in exchange for their bonds when 
+            they mature. Reserve Bank of India issues the Bond on the Government of India's behalf.
           </p>
         </div>
         <div className="sectiom-1-image">

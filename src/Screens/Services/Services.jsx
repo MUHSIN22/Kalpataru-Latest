@@ -49,9 +49,7 @@ export default function Services() {
             <div className="service-accordion">
             <Accordion  title="What are Mutual funds?">
                 <p>
-                  A mutual fund is a company that pools money from many 
-                  investors and invests the money in securities such as stocks, 
-                  bonds, and short-term debt.
+                  When people invest money in mutual funds, that money is pooled together and then invested in various assets such as stocks, bonds, short-term money market instruments, and other types of securities.
                 </p>
             </Accordion>
             </div>
@@ -61,13 +59,10 @@ export default function Services() {
                 <div className="card-content">
                   <h1>National Pension Scheme</h1>
                   <p >
-                    It was introduced by the government in 
-                    2004. Initially, it was an exclusive scheme 
-                    available only to government employees. 
-                    However, in 2009, NPS in India was made 
-                    available to employees beyond the public 
-                    sector. It allows you to invest in the 
-                    scheme throughout your employment.
+                    The Government of India established the National Pension System (NPS) 
+                    so that all participants would receive a steady stream of money once they 
+                    reached retirement age. The PFRDA (Pension Fund Regulatory and Development Authority) 
+                    oversees NPS. It allows you to invest in the scheme throughout your employment.
                   </p>
                   <button className="btn-see-more" onClick={swapTheCard}>See More</button>
                 </div>
@@ -93,18 +88,17 @@ export default function Services() {
           <div className="section-2-col">
             <h1>BONDS</h1>
             <p>
-            Bonds are a type of investment designed to 
-aid governments and corporations to raise 
-money. In a mutual fund, money collected 
-from various investors is taken together to 
-buy a large variety of securities.
+              Investing in a bond is similar to lending money to a firm or the government. 
+              The loan is used by the company for operating expenses, and the investor earns interest. 
+              A bond's market value might fluctuate over time.
             </p>
           </div>
         </div>
         <div className="section-2-col">
           <h2>Is Bond a good investment? </h2>
           <p>
-          Bond funds are a good way to diversify your portfolio, beyond just holding stocks. In terms of risk, bonds are comparatively less risky than stocks or mutual funds.
+          Investing in bond funds is a sensible alternative to only buying equities for 
+          portfolio diversification. Bonds are safer investment options than stock markets or mutual funds.
           </p>
         </div>
       </div>
@@ -112,11 +106,12 @@ buy a large variety of securities.
             <h1 className="main-title">Tax saving schemes</h1>
             <Accordion title="Tax saving schemes">
                 <p className="section-subtitle">
-                  Tax saving mutual funds are just like any other mutual funds 
-                  with an added tax-saving benefit. The special feature of this 
-                  type of mutual fund is that the investments made in the 
-                  tax-saving mutual funds are eligible for tax benefits 
-                  under section 80C of the Indian Income Tax Act.
+                  A Tax-saving mutual funds are like other mutual funds but save taxes. Tax-saving mutual 
+                  funds provide tax advantages under section 80C of the Indian Income Tax Act. 
+                  <br /> <br />
+                  54 EC- One of the ways to save on your capital gains tax is to invest in bonds
+                   within six months of the trading of the property and receiving the gains. On investing in 
+                   bonds, you can claim a tax exemption under Section 54EC of the Indian Income Tax Act, 1961.
                 </p>
             </Accordion>
         </div>

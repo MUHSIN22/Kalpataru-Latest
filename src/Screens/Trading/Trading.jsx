@@ -22,9 +22,13 @@ export default function Trading() {
         <img src="/images/trading-banner.svg" alt="" />
         <h1>What is Trading?</h1>
         <p>
-          It's the aggregation of buyers and sellers of stocks (also known as shares), which represent ownership claims on businesses; these may include securities that are publicly traded, as well as private stock that is sold to investors through equity crowdfunding platforms, such as private companies that are listed on the stock exchange. The majority of the time, an investment is done with a specific plan in mind.</p>
-        <p>  Both buyers and sellers are involved in a trade when they agree to the ask price or the bid price. Buyers may be inclined to increase their bids if they are outnumbered by sellers. Because of this, sellers will raise their pricing, pushing the price up.
-
+          Trading is the process of buying and selling financial instruments to make money. These instruments 
+          are made up of different assets that have a value that goes up and down, and you can trade on 
+          which way that value goes.
+          <br /><br />
+          When buyers and sellers agree on the ask price or the bid price, this is called a trade. 
+          If there are more sellers than buyers, buyers may be more likely to raise their bids. As a result, 
+          sellers will raise their prices, which will make the price go up.
         </p>
       </div>
       <div className="trading-section-3">
@@ -33,7 +37,9 @@ export default function Trading() {
           <div className="contect-info">
             <div className="contect-info-content">
               <p>
-                The phrase "equity" is used to describe fairness and justice, as opposed to the term "equality" itself: In contrast to equality, which is offering the same to everyone, equity means acknowledging and making adjustments to inequalities because we do not all start from the same place. Bias and systemic structures can create hurdles that we need to identify and overcome, both intentionally and unintentionally.
+                Equity refers to a company's ownership shares. In simplest words, it is the entire amount of money a 
+                shareholder would get if all of a company's obligations were paid off and its assets were liquidated.
+                 When a person invests in a company's equity, he or she becomes a minority shareholder.
               </p>
             </div>
           </div>
@@ -45,7 +51,10 @@ export default function Trading() {
           <div className="contect-info">
             <div className="contect-info-content">
               <p>
-                t is possible to buy and sell a specific stock or index in the future by using derivative contracts such as futures and options. The derivatives market is a subset of the equities market that deals in financial instruments. The most frequent form of derivative contract involves the purchase and sale of futures and options. It is a less risky investment than the stock market because of its speculative character.
+                Using derivative contracts like futures and options, you can buy and sell a specific stock or index in 
+                the future. The derivatives market is a part of the stock market where financial instruments are traded.
+                 Futures and options are the most common types of derivative contracts that people buy and sell. 
+                 It is a less risky investment than the stock market.
               </p>
             </div>
           </div>
@@ -57,7 +66,14 @@ export default function Trading() {
           <div className="contect-info">
             <div className="contect-info-content">
               <p>
-                You can trade commodity derivative in Gold, Silver, Crude Oil, Copper, Zinc, Lead, member of MCX and National Commodity & Derivatives Exchange Limited .Nickel, Natural Gas, Refined Soya, Menthe Oil, Soya bean, guar, Chana, Sugar, Black Pepper (Kali mirch), Cardamom, Chilly, Jeera (Cumin) and other Commodities. You shall have to procure user ID and Password first from Kalpataru.
+                The buying and selling of commodities and derivatives of those commodities takes place on a commodities 
+                exchange, similar to the way stock and share transactions are conducted.
+                <br /><br />
+                • Barley, chana, maize, moong, paddy, etc. are only some of the commodities that may be traded on 
+                the National Commodity & Derivatives Exchange Limited (NCDEX).
+                <br /><br />
+                • Bullion, base metals, energy, and more may all be traded on the Multi Commodity Exchange of India 
+                Limited (MCX).
               </p>
             </div>
           </div>
@@ -70,7 +86,10 @@ export default function Trading() {
           <div className="contect-info">
             <div className="contect-info-content">
               <p>
-              Using the Securities Lending and Borrowing Mechanism, investors can take out short-term loans or long-term loans of their stock. Hedging can be accomplished without resorting to the futures market thanks to the platform. Investors who borrow money from SLB are typically short-term traders who wish to sell shares they don't own. Lenders, on the other hand, are investors who purchased shares with the intention of holding them for the long term but have already sold them or otherwise disposed of them.
+                SLB stands for "Securities Lending and Borrowing," a system that allows investors to borrow or lend shares 
+                to other market players. The exchange may be used as a substitute for the futures market for 
+                protecting against risk. Investors looking to borrow money via SLB are often short sellers. On the 
+                other hand, lenders are long-term investors who own shares that are now sitting dormant in their Demat accounts.
               </p>
             </div>
           </div>

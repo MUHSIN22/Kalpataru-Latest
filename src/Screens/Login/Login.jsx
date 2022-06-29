@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Login.css";
 import CustomInputs from "../../Components/Inputs/Input";
 import { Link } from "react-router-dom";
 export default function Login() {
+  useEffect(() =>{
+    window.location.href = "https://ekyc.kalpatarumulti.com/kalpataru/signup"
+  },[])
   return (
     <div className="Login-Container">
       <div className="Login-Block">

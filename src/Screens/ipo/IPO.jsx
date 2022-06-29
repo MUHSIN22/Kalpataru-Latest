@@ -8,7 +8,7 @@ export default function IPO() {
     <div className="ipo-container">
       <div className="ipo-section-1">
         <div className="section-1-content">
-          <h1 className="section-title">IPO</h1>
+          <h1 className="section-title">Initial Public Offering </h1>
           <p>
             Discover  IPOs with the highest growth potential
             early and invest now through Kalpataru to earn big in the future...
@@ -25,30 +25,20 @@ export default function IPO() {
             <img src="/images/ipo-image2.svg" alt="" />
           </div>
           <div className="section-2-col">
-            <h1>IPO</h1>
+            <h1>Initial Public Offering</h1>
             <p>
-              It's not uncommon for a rapidly expanding business that has
-              already depleted its private equity pool to turn to the general
-              public for further funding. By listing its shares on the stock
-              market, a corporation can raise money from investors. In order to
-              list a firm on the stock market, a corporation must go through the
-              process of an initial public offering (IPO). Companies can now
-              borrow money from the public using this approach.
+              A company's first time issuing its stock to the general public is called an initial public offering (IPO). 
+              A public offering of stock (IPO) is a method through which a firm may get access to equity funding from the 
+              general investing public.
             </p>
           </div>
         </div>
         <div className="section-2-col">
           <h2>Is IPO is a good investment? </h2>
           <p>
-            Stocks in a firm are sold in an IPO to retail investors,
-            institutional investors, and individuals with substantial financial
-            resources. A firm becomes publicly traded when it makes an initial
-            public offering (IPO) and is listed on a stock exchange. Until then,
-            it will continue to be a privately held firm. As a result, while the
-            company's shares were formerly owned privately, they are now owned
-            by the general public as a result of the IPO. So, an IPO is the
-            process by which a private company is made public by the selling of
-            its stock to members of the public at large.
+            One approach to generate rapid money in the stock market is via initial public offerings (IPOs). 
+            An increasing number of initial public offerings (IPOs) hit the market every year. Investors in initial 
+            public offerings (IPOs) stand to benefit greatly from this situation.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function GeneralInsurence() {
             <div className="section-1">
                 <div className="section-1-content">
                     <h1>General Insurance</h1>
-                    <p>General insurance refers to any type of insurance arrangement that is not specifically related to life insurance. All of these non-life insurance types fall under the umbrella of general insurance.</p>
+                    <p>General insurance refers to insurance policies that do not fall within the domain of life insurance. The various types of general insurance include fire, marine, motor, accident, and other non-life policies.</p>
                 </div>
                 <div className="section-1-image">
                     <img src='images/general-insurenece.svg' alt='' />
@@ -62,9 +62,11 @@ export default function GeneralInsurence() {
             </div> */}
             <div className="section-2">
                 <h1>About General Insurance</h1>
-                <p>General insurance refers to any type of insurance arrangement that is not specifically related to life insurance. All of these non-life insurance types fall under the umbrella of general insurance.
-                </p>
-                <p>The economic value of the tangible assets must be safeguarded because they are vulnerable to deterioration. General insurance products are purchased for this purpose since they cover against unpredictable events such as damage or loss of the asset. In the same way that life insurance has a premium, so does general insurance.
+                <p>
+                    The physical assets are susceptible to harm, and it is necessary to maintain their economic worth. 
+                    General insurance products are purchased for this reason because they offer protection against 
+                    unpredictable occurrences such as the asset's destruction or loss. Similar to life insurance, general 
+                    insurance products come with a premium.
                 </p>
             </div>
 

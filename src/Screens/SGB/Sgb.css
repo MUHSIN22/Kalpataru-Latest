@@ -49,11 +49,6 @@
   text-align: center;
 }
 .SGB .parent-table {
-  box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 20% 20% 10% 10% 10% 10% 10% 10%;
-  margin-top: 2rem;
   width: 80%;
 }
 
@@ -93,27 +88,54 @@
 .border-bottom {
   border-bottom: 4px solid #455a64;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
+  .SGB{
+    padding: 1rem;
+  }
   .SGB .section-1 {
-    width: 95%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column;
+  }
+  .SGB .section-1 .section-1-content{
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .SGB .section-1 .section-1-content h1 {
+    font-size: 2rem;
+  }
+  .SGB .section-1 .section-1-content p {
+    font-size: 1.1rem;
   }
   .SGB .section-1 .sectiom-1-image {
+    width: 60%;
+  }
+  .SGB .mutualFund-header {
     width: 100%;
   }
-  .SGB .section-1 .sectiom-1-image img {
+  .SGB .mutualFund-header h1{
+    font-size: 1.5rem;
+  }
+  .SGB .parent-table {
     width: 100%;
+    overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .SGB .section-1 .sectiom-1-image {
+    width: 80%;
   }
   .SGB .section-1 .section-1-content {
     width: 100%;
   }
+  .SGB .section-1 .section-1-content h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
   .SGB .section-1 .section-1-content p{
     text-align: justify;
+    font-size: 1rem;
   }
-  .SGB .mutualFund-header{
-    width: 90%;
+  .SGB .mutualFund-header h1{
+    font-size: 1.3rem;
   }
   .SGB .parent-table{
     margin-top: 0%;

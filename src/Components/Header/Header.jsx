@@ -101,10 +101,10 @@ export default function Header() {
                         </li>
                     ))
                 }
-                <li>
+                <li className='nav-btn-wrapper'>
                     <Link to='/login' className="btn-nav">Login</Link>
                 </li>
-                <li>
+                <li className='nav-btn-wrapper'>
                     <a href=' https://ekyc.kalpatarumulti.com/ipo' className="btn-nav">IPO</a>
                 </li>
             </ul>

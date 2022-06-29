@@ -112,5 +112,31 @@
     .margin-banner .banner-img-wrapper{
         display: flex;
         justify-content: center;
+        width: 65%;
+        margin: auto;
+    }
+    .margin-banner .content-section {
+        margin-bottom: 0;
+    }
+    .margin-banner .section-subtitle {
+        font-size: 1.3rem;
+    }
+    .margin-banner .main-title {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .margin-banner .main-title {
+        font-size: 1.8rem;
+    }
+    .margin-banner .section-subtitle {
+        margin-left: 0;
+        font-size: 1.1rem;
+        margin: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .margin-banner .content-section {
+        margin-bottom: 0;
     }
 }

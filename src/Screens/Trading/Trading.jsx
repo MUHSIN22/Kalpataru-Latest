@@ -39,10 +39,48 @@ export default function Trading() {
           </div>
         </Accordion>
       </div>
-      <div className="trading-section-4">
+      <div className="trading-section-3">
+        <h1>F&O</h1>
+        <Accordion title="What is F&O">
+          <div className="contect-info">
+            <div className="contect-info-content">
+              <p>
+                t is possible to buy and sell a specific stock or index in the future by using derivative contracts such as futures and options. The derivatives market is a subset of the equities market that deals in financial instruments. The most frequent form of derivative contract involves the purchase and sale of futures and options. It is a less risky investment than the stock market because of its speculative character.
+              </p>
+            </div>
+          </div>
+        </Accordion>
+      </div>
+      <div className="trading-section-3">
+        <h1>Comodity</h1>
+        <Accordion title="What is Comodity?">
+          <div className="contect-info">
+            <div className="contect-info-content">
+              <p>
+                You can trade commodity derivative in Gold, Silver, Crude Oil, Copper, Zinc, Lead, member of MCX and National Commodity & Derivatives Exchange Limited .Nickel, Natural Gas, Refined Soya, Menthe Oil, Soya bean, guar, Chana, Sugar, Black Pepper (Kali mirch), Cardamom, Chilly, Jeera (Cumin) and other Commodities. You shall have to procure user ID and Password first from Kalpataru.
+              </p>
+            </div>
+          </div>
+        </Accordion>
+      </div>
+
+      <div className="trading-section-3">
+        <h1>SLB</h1>
+        <Accordion title="What is SLB?">
+          <div className="contect-info">
+            <div className="contect-info-content">
+              <p>
+              Using the Securities Lending and Borrowing Mechanism, investors can take out short-term loans or long-term loans of their stock. Hedging can be accomplished without resorting to the futures market thanks to the platform. Investors who borrow money from SLB are typically short-term traders who wish to sell shares they don't own. Lenders, on the other hand, are investors who purchased shares with the intention of holding them for the long term but have already sold them or otherwise disposed of them.
+              </p>
+            </div>
+          </div>
+        </Accordion>
+      </div>
+
+      {/* <div className="trading-section-4">
         <img src="/images/trading-faq.svg" alt="" />
         <div className="section-4-content">
-          <h1>What Is F&O</h1>
+          <h1>What is F&O</h1>
           <p>
             It is possible to buy and sell a specific stock or index in the future by using derivative contracts such as futures and options.
             The derivatives market is a subset of the equities market that deals in financial instruments. The most frequent form of derivative contract involves the purchase and sale of futures and options. It is a less risky investment than the stock market because of its speculative character.
@@ -61,7 +99,7 @@ export default function Trading() {
         <p>
         Using the Securities Lending and Borrowing Mechanism, investors can take out short-term loans or long-term loans of their stock. Hedging can be accomplished without resorting to the futures market thanks to the platform. Investors who borrow money from SLB are typically short-term traders who wish to sell shares they don't own. Lenders, on the other hand, are investors who purchased shares with the intention of holding them for the long term but have already sold them or otherwise disposed of them.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
         <div className="PrivacyPolicy-Dropdowns">
           <Accordion title="PRIVACY POLICY STATEMENT">
             <p>
-              We, at Kalpatarumulti.com, acknowledge and accept that the
+              We, at Kalpataru Multiplier LTD, acknowledge and accept that the
               personal details that you impart to us, is to be kept in strict
               confidentiality and to use the information only in the manner
               which would be beneficial to our customers. We consider our
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
           </Accordion>
           <Accordion title="IMPART YOUR PERSONAL INFORMATION">
             <p>
-              We, at Kalpatarumulti.com, acknowledge and accept that the
+              We, at Kalpataru Multiplier LTD,, acknowledge and accept that the
               personal details that you impart to us, is to be kept in strict
               confidentiality and to use the information only in the manner
               which would be beneficial to our customers. We consider our
@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
           </Accordion>
           <Accordion title="KALPATARU MULTIPLIER LTD">
             <p>
-              We, at Kalpatarumulti.com, acknowledge and accept that the
+              We, at Kalpataru Multiplier LTD,, acknowledge and accept that the
               personal details that you impart to us, is to be kept in strict
               confidentiality and to use the information only in the manner
               which would be beneficial to our customers. We consider our
@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
           </Accordion>
           <Accordion title="INFORMATION SHARING AND DISCLOSURE">
             <p>
-              We, at Kalpatarumulti.com, acknowledge and accept that the
+              We, at Kalpataru Multiplier LTD,, acknowledge and accept that the
               personal details that you impart to us, is to be kept in strict
               confidentiality and to use the information only in the manner
               which would be beneficial to our customers. We consider our

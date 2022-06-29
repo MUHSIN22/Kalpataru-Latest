@@ -6,7 +6,7 @@ export default function Depository() {
         <div className='Depository'>
             <div className="section-1">
                 <div className="section-1-content">
-                    <h1>Depository</h1>
+                    <h1>Depository Participant</h1>
                     <p>Depository is an institution that takes cash deposits from its customers, like a bank or savings and loans organisation. As a depository, a bank or other entity that holds and facilitates the trading of securities can be considered.</p>
                 </div>
                 <div className="section-1-image">

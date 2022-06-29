@@ -22,6 +22,9 @@
   padding: 2rem;
   color: #ffff;
 }
+.Accordion-Trigger h2{
+  font-size: 1.5rem;
+}
 .A-Trigger {
   background-color: transparent;
   border: none;
@@ -62,12 +65,33 @@
   top: 80%;
   right: 6%;
 }
-@media only screen and (max-width: 550px){
-  
+@media only screen and (max-width: 768px){
+  .Accordion-Trigger h2{
+    font-size: 1.5rem;
+  }
+  .Accordion-Target{
+    padding:2rem;
+    height: auto;
+  }
+  .Accordion-Bottom-Cup{
+    position: initial;
+    margin-left: auto;
+  }
+  .Accordion-Upper-Cup{
+    position: initial;
+    margin-right: auto;
+
+  }
+  .Accordion-Target p{
+    font-size: 1.1rem;
+  }
 }
 @media only screen and (max-width: 450px) {
+  .Accordion-Trigger{
+    padding: 1rem;
+  }
   .Accordion-Trigger h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .Accordion-Target {
     width: 100%;

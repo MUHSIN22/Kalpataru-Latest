@@ -54,7 +54,7 @@ export default [
                 ]
             },
             {
-                title: "Depository",
+                title: "Depository Participant",
                 type: 'link',
                 link: "/depository"
             },
@@ -85,11 +85,6 @@ export default [
         type: 'dropdown',
         dropOptions:[
             {
-                title: "Investor Charter",
-                type: 'link',
-                link: "/investor-charter"
-            },
-            {
                 title: "Advisory For Investors",
                 type: 'link',
                 link: "/advisory-of-investors"
@@ -108,16 +103,6 @@ export default [
                 title: "News & Announcement",
                 type: 'link',
                 link: "newsandannouncements"
-            },
-            {
-                title: "Privacy Policy",
-                type: 'link',
-                link: "/privacy-policy"
-            },
-            {
-                title: "Terms Of Use",
-                type: 'link',
-                link: ""
             },
             {
                 title: "Downloads",

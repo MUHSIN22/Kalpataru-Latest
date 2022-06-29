@@ -55,7 +55,6 @@ export default function Services() {
                 </p>
             </Accordion>
             </div>
-            <h1>National Pension Schema</h1>
             <div className="pention-schema-grid">
               <div className="top-card" ref={topCardRef}>
                 <img src="/images/services/pention.png" alt="" className="pension-img" />
@@ -83,11 +82,9 @@ export default function Services() {
                     sector. It allows you to invest in the 
                     scheme throughout your employment.
                   </p>
-                  <button className="btn-see-more" onClick={swapTheCard}>See More</button>
+                  <button className="btn-see-more" onClick={swapTheCard}>See Less</button>
               </div>
             </div>
-
-            <h1 className="main-title">Bonds</h1>
             <div className="section-2">
         <div className="section-2-content">
           <div className="section-2-image">

@@ -126,7 +126,9 @@
     .header-container {
         height: 5rem;
     }
-
+    .nav-btn-wrapper{
+        height: 3rem;
+    }
     .header-container .header-logo {
         height: 4.5rem;
     }
@@ -145,6 +147,8 @@
         overflow-y: scroll;
         transform: translateX(100%);
         transition: all 0.3s ease;
+        margin-top: 0;
+        padding-left: 0;
     }
 
     .header-container .nav-list--active {

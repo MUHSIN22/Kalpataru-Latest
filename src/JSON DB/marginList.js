@@ -1,118 +1,1041 @@
 const MarginCalData = {
-    nse: {
-      head: [
-        "Symbol",
-        "Series",
-        "Intrady Margin(Times)",
-        "Delivery Margin(Times)",
+  nse: {
+    head: [
+      "Symbol",
+      "Series",
+      "Intrady Margin(Times)",
+      "Delivery Margin(Times)",
+    ],
+    body: [
+      [
+        {
+          value: "HEROMOTOCO",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-      body: [
-        ["HEROMOTOCO", "EQ", "5X", "3.5X"],
-        ["TATAMOTORS", "EQ", "5X", "3.5X"],
-        ["BERGEPAINT", "EQ", "5X", "3.5X"],
-        ["COROMANDEL", "EQ", "5X", "3.5X"],
-        ["MMP", "EQ", "5X", "3.5X"],
-        ["SUNFLAG", "EQ", "5X", "3.5X"],
-        ["PCBL", "EQ", "5X", "3.5X"],
-        ["TORNTPHARM", "EQ", "5X", "3.5X"],
-        ["TRIVENI", "EQ", "5X", "3.5X"],
-        ["JUBLINDS", "EQ", "5X", "3.5X"],
-        ["PIDILITIND", "EQ", "5X", "3.5X"],
-        ["OBEROIRLTY", "EQ", "5X", "3.5X"],
+      [
+        {
+          value: "TATAMOTORS",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-    },
-    MTF: {
-      head: [
-        "Symbol",
-        "Series",
-        "Intrady Margin(Times)",
-        "Delivery Margin(Times)",
+      [
+        {
+          value: "BERGEPAINT",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-      body: [
-        ["COLPAL", "EQ", "5X", "3.5X"],
-        ["COROMONDEL", "EQ", "5X", "3.5X"],
-        ["CROMPTON", "EQ", "5X", "3.5X"],
-        ["CUB", "EQ", "5X", "3.5X"],
-        ["MMP", "EQ", "5X", "3.5X"],
-        ["CUMMINSIND", "EQ", "5X", "3.5X"],
-        ["DABUR", "EQ", "5X", "3.5X"],
-        ["DIVISLAB", "EQ", "5X", "3.5X"],
-        ["DRREDDY", "EQ", "5X", "3.5X"],
-        ["EBBETF0423", "EQ", "5X", "3.5X"],
-        ["PIDILITIND", "EQ", "5X", "3.5X"],
-        ["EBBETF0425", "EQ", "5X", "3.5X"],
+      [
+        {
+          value: "COROMANDEL",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-    },
-    FO: {
-      head: [
-        "Symbol",
-        "Series",
-        "Intrady Margin(Times)",
-        "Delivery Margin(Times)",
+      [
+        {
+          value: "MMP",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-      body: [
-        ["COLPAL", "EQ", "5X", "3.5X"],
-        ["COROMONDEL", "EQ", "5X", "3.5X"],
-        ["CROMPTON", "EQ", "5X", "3.5X"],
-        ["CUB", "EQ", "5X", "3.5X"],
-        ["MMP", "EQ", "5X", "3.5X"],
-        ["CUMMINSIND", "EQ", "5X", "3.5X"],
-        ["DABUR", "EQ", "5X", "3.5X"],
-        ["DIVISLAB", "EQ", "5X", "3.5X"],
-        ["DRREDDY", "EQ", "5X", "3.5X"],
-        ["EBBETF0423", "EQ", "5X", "3.5X"],
-        ["PIDILITIND", "EQ", "5X", "3.5X"],
-        ["EBBETF0425", "EQ", "5X", "3.5X"],
+      [
+        {
+          value: "SUNFLAG",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-    },
-    MCX: {
-      head: [
-        "Symbol",
-        "Expiry Month",
-        "Lot Size",
-        "Price (Rs)",
-        "Intraday Margin/Lot (Rs.)",
-        "Carryover Margin (Rs.)",
-        "Action",
+      [
+        {
+          value: "PCBL",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-      body: [
-        ["CRUDEOIL", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["GOLD", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["COPPER", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["GOLDM", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["SILVER", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["NATURALGAS", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["MCXMETLDEX", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["LEAD", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["MCXBULLDEX", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["SILVERMIC", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["ZINC", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
-        ["SILVERM", "EQ", "5X", "3.5X", "265750", "265750", "Calculate"],
+      [
+        {
+          value: "TORNTPHARM",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-    },
-    MTFFUT: {
-      head: [
-        "Symbol",
-        "Expiry Month",
-        "Lot Size",
-        "Price (Rs)",
-        "Future Margin (Rs.)",
-        "MTF Margin (Rs.)",
+      [
+        {
+          value: "TRIVENI",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-      body: [
-        ["CRUDEOIL", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["GOLD", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["COPPER", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["GOLDM", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["SILVER", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["NATURALGAS", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["MCXMETLDEX", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["LEAD", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["MCXBULLDEX", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["SILVERMIC", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["ZINC", "EQ", "5X", "3.5X", "314262.53", "175885"],
-        ["SILVERM", "EQ", "5X", "3.5X", "314262.53", "175885"],
+      [
+        {
+          value: "JUBLINDS",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
       ],
-    },
-  };
-  export default MarginCalData;
+      [
+        {
+          value: "PIDILITIND",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
+      ],
+      [
+        {
+          value: "OBEROIRLTY",
+        },
+        {
+          value: "EQ",
+        },
+        {
+          value: "5X",
+        },
+        {
+          value: "3.5X",
+        },
+      ],
+    ],
+  },
+  MTF: {
+    head: [
+      "Symbol",
+      "Series",
+      "Intrady Margin(Times)",
+      "Delivery Margin(Times)",
+    ],
+    body: [
+      [
+        {
+          value: "COLPAL"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "COROMONDEL"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CROMPTON"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CUB"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "MMP"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CUMMINSIND"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DABUR"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DIVISLAB"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DRREDDY"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "EBBETF0423"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "PIDILITIND"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "EBBETF0425"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+    ],
+  },
+  FO: {
+    head: [
+      "Symbol",
+      "Series",
+      "Intrady Margin(Times)",
+      "Delivery Margin(Times)",
+    ],
+    body: [
+      [
+        {
+          value: "COLPAL"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "COROMONDEL"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CROMPTON"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CUB"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "MMP"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "CUMMINSIND"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DABUR"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DIVISLAB"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "DRREDDY"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "EBBETF0423"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "PIDILITIND"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+      [
+        {
+          value: "EBBETF0425"
+        },
+        {
+          value: "EQ"
+        },
+        {
+          value: "5X"
+        },
+        {
+          value: "3.5X"
+        }
+      ],
+    ],
+  },
+  MCX: {
+    head: [
+      "Symbol",
+      "Expiry Month",
+      "Lot Size",
+      "Price (Rs)",
+      "Intraday Margin/Lot (Rs.)",
+      "Carryover Margin (Rs.)",
+    ],
+    body: [
+        [
+          {
+            value: "CRUDEOIL"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "GOLD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "COPPER"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "GOLD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVER"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "NATURALGAS"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "MCXMETLDEX"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "LEAD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "MCXBULLDEX"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVERMIC"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "ZINC"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVERM"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ]
+    ],
+  },
+  MTFFUT: {
+    head: [
+      "Symbol",
+      "Expiry Month",
+      "Lot Size",
+      "Price (Rs)",
+      "Future Margin (Rs.)",
+      "MTF Margin (Rs.)",
+    ],
+    body: [
+        [
+          {
+            value: "CRUDEOIL"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "GOLD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "COPPER"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "GOLD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVER"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "NATURALGAS"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "MCXMETLDEX"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "LEAD"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "MCXBULLDEX"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVERMIC"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "ZINC"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ],
+        [
+          {
+            value: "SILVERM"
+          },
+          {
+            value: "EQ"
+          },
+          {
+            value: "5X"
+          },
+          {
+            value: "3.5X"
+          },
+          {
+            value: "265750"
+          },
+          {
+            value: "265750"
+          },
+        ]
+      ]
+  },
+};
+export default MarginCalData;

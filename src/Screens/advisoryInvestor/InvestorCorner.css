@@ -73,10 +73,23 @@
     .investor-banner{
         grid-template-columns: 1fr;
         grid-template-areas: 'content''image';
+        grid-gap: 0;
+        margin-bottom: 2rem;
     }
     .investor-banner .banner-img-wrapper{
         display: flex;
         justify-content: center;
+        width: 70%;
+        justify-self: center;
+    }
+    .investor-banner .main-title {
+        font-size: 2.5rem;
+    }
+    .investor-banner .section-subtitle {
+        font-size: 1.5rem;
+    }
+    .investor-banner .content-section {
+        margin-bottom: 0;
     }
     .investor-attention .attention-wrapper{
         width: 200%;
@@ -102,8 +115,11 @@
     .investor-banner{
         width: 100%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
+    }
+    .investor-banner .main-title {
+        font-size: 1.8rem;
     }
     .investor-banner .content-section{
         width: 100%;
@@ -114,5 +130,7 @@
     .investor-banner .section-subtitle{
         align-items: center;
         margin-left: 0;
+        font-size: 1.1rem;
+        width: 100%;
     }
 }

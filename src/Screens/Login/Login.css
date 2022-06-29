@@ -32,6 +32,9 @@
   font-size: 40px;
   font-weight: 500;
 }
+.Block-Image h3 span{
+  color: #d7373d;
+}
 .Block-Image img {
   width: 95%;
 }

@@ -1,99 +1,194 @@
-.TestimonialCarousel-Container {
-  width: 90%;
+.testimonial-carousel-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.testimonial-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.testimonial-container h2 {
-  width: 100%;
-  text-align: center;
+.testimonial-carousel-container h1{
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.testimonial-carousel-container h2{
+  font-size: 2.5rem;
   color: #3E494E;
+  font-weight: 600;
 }
-.testimonial-container .testimonial-card {
-  width: 90%;
-  padding: 1rem;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-.testimonial-card::after {
-  position: relative;
-  height: 15rem;
-  width: 35rem;
-  background: #ffffff;
-  top: 60%;
-  right: 50%;
-  transform: rotate(45deg) translateX(50%);
-  z-index: -1;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.testimonial-card p {
-  color: #5e6282;
-  text-align: center;
-}
-.testimonial-card {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  border: none;
-}
-.testimonial-card p::before {
-  content: "''";
-
-  position: relative;
-}
-.testimonial-container .people {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-}
-.people-info {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-}
-.big {
-  transform: scale(1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.People-Profile {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.People-Profile img {
+.testimonial-carousel-container .dailogue-box{
+  margin-top: 2rem;
+  background: #fff;
+  box-shadow: var(--shadow-primary);
+  padding: 3rem;
+  font-size: 1.5rem;
+  color: #5E6282;
   width: 80%;
-  aspect-ratio: 3/3;
-}
-.info {
-  width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0;
+  gap: 2rem;
+  border-radius: 5px;
+  font-weight: 600;
 }
-.image-p {
-  width: 50%;
+.testimonial-carousel-container .carousel-items-container{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.carousel-items-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 3rem;
+  align-items: center;
+}
+.testimonial-carousel-container .carousel--item{
+  position: relative;
+  transition: all 0.3s ease;
+}
+.testimonial-carousel-container .carousel--item .carousel--item-body{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  pointer-events: none;
+}
+.testimonial-carousel-container .quotes-icon{
+  width: 4rem;
+  height: 4rem;
+}
+.testimonial-carousel-container .carousel--item .dailogue-icon{
+  position: absolute;
+  height: 3rem;
+  top: -3rem;
+  left: 15%;
   display: none;
 }
-@media only screen and (max-width: 450px){
-    .testimonial-container .people{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.testimonial-carousel-container .active--carousel .dailogue-icon{
+  display: block;
+}
+.testimonial-carousel-container .active--carousel .profile-img{
+  width: 10rem;
+  height: 10rem;
+}
+.testimonial-carousel-container .profile-img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.testimonial-carousel-container .carousel--item .profile-details{
+  display: none;
+}
+.testimonial-carousel-container .active--carousel .profile-details{
+  display: block;
+}
+.testimonial-carousel-container .left-slide-icon,
+.testimonial-carousel-container .right-slide-icon{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testimonial-carousel-container .profile-img{
+    width: 6rem;
+    height: 6rem;
+  }
+  .testimonial-carousel-container .active--carousel .profile-img{
+    width: 9rem;
+    height: 9rem;
+  }
+  .testimonial-carousel-container .active--carousel h3{
+    font-size: 1.3rem;
+  }
+  .testimonial-carousel-container .quotes-icon{
+    width: 3rem;
+    height: 3rem;
+  }
+  .testimonial-carousel-container .dailogue-box {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testimonial-carousel-container .dailogue-box {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .testimonial-carousel-container .quotes-icon{
+    width: 2rem;
+    height: 2rem;
+  }
+  .carousel-items-wrapper {
+    width: 100%;
+  }
+  .testimonial-carousel-container .profile-img{
+    width: 4rem;
+    height: 4rem;
+  }
+  .testimonial-carousel-container .active--carousel .profile-img{
+    width: 8rem;
+    height: 8rem;
+  }
+  .testimonial-carousel-container .active--carousel h3{
+    font-size: 1.2rem;
+  }
+  .testimonial-carousel-container .profile-designation{
+    font-size: 1rem;
+  }
+  .testimonial-carousel-container h1 {
+    font-size: 2rem;
+  }
+  .testimonial-carousel-container h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+  } 
+}
+@media only screen and (max-width: 500px) {
+  .carousel-items-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-items-container{
+    align-items: center;
+  }
+  .testimonial-carousel-container .dailogue-box {
+    font-size: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .testimonial-carousel-container .profile-img{
+    width: 5rem;
+    height: 5rem;
+  }
+  .testimonial-carousel-container .active--carousel .profile-img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .testimonial-carousel-container .carousel--item .carousel--item-body {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .testimonial-carousel-container .carousel--item {
+    display: none;
+  }
+  .testimonial-carousel-container .active--carousel{
+    display: block;
+  }
+  .testimonial-carousel-container .active--carousel h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .testimonial-carousel-container h1 {
+    font-size: 1.8rem;
+  }
+  .testimonial-carousel-container h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  } 
+  .testimonial-carousel-container .carousel--item .dailogue-icon {
+    height: 2rem;
+    left: 32%;
+  }
+  .testimonial-carousel-container .left-slide-icon,
+  .testimonial-carousel-container .right-slide-icon{
+    display: block;
+    font-size: 2rem;
+  }
 }

@@ -65,7 +65,7 @@
   gap: 1rem;
 }
 .PrivacyPolicy-Dropdowns p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   text-align: left;
 }
@@ -95,7 +95,7 @@
     margin: 2rem 0;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .PrivacyPolicy-Container{
     margin-top: 1rem;
   }
@@ -109,23 +109,10 @@
     font-size: 1.8rem;
     margin: 1rem 0;
   }
-  /* .PrivacyPolicy-Banner {
-    width: 95%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .PrivacyPolicy-Banner-Image {
-    width: 100%;
-  }
   .PrivacyPolicy-Banner-content {
-    width: 100%;
-    gap: 1rem;
+    gap: 0rem;
   }
-  .PrivacyPolicy-Banner-content p{
-    width: 100%;
-  }
-  .PrivacyPolicy-Dropdown-Col{
-    width: 95%;
-  } */
+  .PrivacyPolicy-Dropdowns p {
+    font-size: 1rem;
+  } 
 }

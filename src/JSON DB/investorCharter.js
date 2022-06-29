@@ -2,29 +2,371 @@ export default {
     monthlyDisposal: {
         head: ["Sr No","Month","Carried forward from previous month","Recieved","Resolved","Pending"],
         body: [
-            ["1","April 2021","0","0","0","0"],
-            ["2","May 2021","0","0","0","0"],
-            ["3","Jun 2021","0","0","0","0"],
-            ["4","Jul 2021","0","0","0","0"],
-            ["5","Aug 2021","0","0","0","0"],
-            ["6","Sep 2021","0","0","0","0"],
-            ["7","Oct 2021","0","0","0","0"],
-            ["8","Nov 2021","0","0","0","0"],
-            ["9","Dec 2021","0","0","0","0"],
-            ["10","Jan 2021","0","0","0","0"],
-            ["11","Feb 2021","0","0","0","0"],
-            ["12","Mar 2021","0","0","0","0"],
-            ["13","April 2021","0","0","0","0"],
+            [
+                {
+                    value: '1',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '2',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '3',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '4',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '5',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '6',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '7',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '8',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '9',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '10',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '11',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '12',
+                },
+                {
+                    value: 'April 2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ]
         ]
     },
     annualDisposal: {
         head: ["Sr No","Year","Carried forward from previous year","Received during the year","Resolved during this year","Pending at the end of year"],
-        body: [
-            ["1","2016","0","0","0","0"],
-            ["2","2017","0","0","0","0"],
-            ["3","2018","0","0","0","0"],
-            ["4","2019","0","0","0","0"],
-            ["5","2020","0","0","0","0"],
+        body:[
+            [
+                {
+                    value: '1',
+                },
+                {
+                    value: '2017',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '2',
+                },
+                {
+                    value: '2018',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '3',
+                },
+                {
+                    value: '2019',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '4',
+                },
+                {
+                    value: '2020',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '5',
+                },
+                {
+                    value: '2021',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ],
+            [
+                {
+                    value: '6',
+                },
+                {
+                    value: '2022',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                },
+                {
+                    value: '0',
+                }
+            ]
         ]
     }
 }

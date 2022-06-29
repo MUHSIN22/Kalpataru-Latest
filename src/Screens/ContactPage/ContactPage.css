@@ -30,6 +30,10 @@
     align-items: center;
     margin: 1rem 0;
 }
+.contact-banner .contact-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 .contact-banner .contact-icon-wrapper{
     width: 4.5rem;
     height: 4.5rem;
@@ -83,19 +87,31 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .contact-page .contact-banner {
+        padding-top: 1rem;
+    }
     .contacts{
         flex-direction: column;
         display: flex;
         gap: 0;
         width: 80%;
     }
+    .contact-banner .contact-list {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 }
 @media only screen and (max-width: 500px) {
     .contacts{
         padding: 1rem;
         width: 100%;
+        margin-top: 1rem;
     }
     .location-section .location-wrapper{
         margin-top: 1rem;
+    }
+    .contact-banner .contact-title {
+        font-size: 1rem;
+        font-weight: 600;
     }
 }

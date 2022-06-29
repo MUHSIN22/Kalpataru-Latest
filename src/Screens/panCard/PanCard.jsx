@@ -1,5 +1,7 @@
 import React from "react";
 import ContactUsBlock from "../../Components/ContactUs-Block/ContactUsBlock";
+import TablePrimary from "../../Components/TablePrimary/TablePrimary";
+import PanDocs from "../../JSON DB/PanDocs";
 import "./pancard.css";
 export default function PanCard() {
   return (
@@ -37,21 +39,14 @@ export default function PanCard() {
       <div className="section-3">
         <div className="mutualFund-header">
           <h1>
-            Online Process to apply for PAN Card
+           Apply for PAN Card
           </h1>
         </div>
-        <div className="section-3-content-row">
-          <h4> Step-1 </h4>
-          <div className="col">
-          <p>
-            In order to apply for a PAN card online, you will have to visit the
-            website of Protean eGov Technologies Limited(formerly NSDL)</p> 
-            <p>where
-            you can fill in the information which needs to be submitted.
-          </p>
-          </div>
+        <h4>Documents Required</h4>
+        <div className="doc-table-wrapper">
+          <TablePrimary data={PanDocs}/>
         </div>
-        <div className="section-3-content-row">
+        {/* <div className="section-3-content-row">
           <h4> Step-2</h4>
           <div className="col">
             <p>
@@ -101,7 +96,7 @@ export default function PanCard() {
             After submitting, the website provides you with a 15-digit
             acknowledgement number and the page must be printed
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="contect-info">
         <ContactUsBlock />

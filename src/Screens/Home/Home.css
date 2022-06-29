@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
 .home-page {
     width: 100%;
     display: flex;
@@ -52,24 +53,20 @@
 }
 
 @keyframes move {
-    20% {
+    25% {
         transform: translateY(-40px);
     }
 
-    40% {
+    50% {
         transform: translateY(-80px);
     }
 
-    60% {
+    75% {
         transform: translateY(-120px);
     }
 
-    80% {
-        transform: translateY(-160px);
-    }
-
     100% {
-        transform: translateY(-200px);
+        transform: translateY(-160px);
     }
 
 }
@@ -179,22 +176,12 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-
-.home-page .welcome-content h1 {
-    width: 84%;
+.home-page .welcome-content h1{
     font-size: 2.6rem;
-    font-weight: 600;
+    width: 74%;
 }
-
-.home-page .welcome-content p {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: justify;
-}
-
 .home-page .welcome-image-section {
     width: 70%;
 }
@@ -213,6 +200,7 @@
     padding: 1.5rem;
     border-radius: 0.5rem;
     margin-top: 2rem;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -646,7 +634,115 @@
         margin-top: 2rem;
     }
 }
-
+@media only screen and (max-width: 1100px) {
+    .home-page .home-banner{
+        margin-top: 2rem;
+        padding: 0 3%;
+    }
+    .home-page .home-banner .image-section {
+        width: 50%;
+    }
+    .home-page .home-banner .image-section img{
+        width: 100%;
+        height: auto;
+    }
+    .home-page .home-banner .banner-content {
+        width: 50%;
+    }
+    .home-page .welcome-section {
+       height: max-content;
+       width: 100%;
+       padding: 0 3%;
+    }
+    .home-page .home-banner .banner-content p {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .home-page .home-banner .banner-content h2 {
+        font-size: 1.8rem;
+    }
+    .home-page .home-banner .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    .home-page .welcome-content h1 {
+        font-size: 2.3rem;
+    }
+    .home-page .welcome-content p {
+        font-size: 17px;
+    }
+    .home-page .features-section {
+        width: 100%;
+        padding: 0 3%;
+        margin-top: 2rem;
+    }
+    .home-page .feature-card{
+        min-width: 35%;
+    }
+    .home-page .feature-content h1 {
+        font-size: 2.3rem;
+    }
+    .offered-product-section {
+        width: 100%;
+        padding: 0 3%;
+        margin-top: 2rem;
+    }
+    .offered-product-section h1 {
+        font-size: 2.3rem;
+    }
+    .home-page .contact-section {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0 3%;
+    }
+    .home-page .contact-section h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .home-page .contact-section h2 {
+        font-size: 1.8rem;
+    }
+    .home-page .contact-form {
+        width: 45%;
+        gap: 1rem;
+    }
+    .home-page .contact-image-wrapper{
+        width: 55%;
+    }
+    .home-page .contact-input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    .home-page .contact-form .btn-submit {
+        min-width: max-content;
+        font-size: 1.3rem;
+    }
+    .know-more-section .know-more-content h1 {
+        font-size: 2rem;
+    }
+    .know-more-section .know-more-content p {
+        font-size: 1.6rem;
+    }
+    .know-more-content .btn-about-us {
+        font-size: 1.3rem;
+        min-width: max-content;
+    }
+    .home-page .service-section .service-content h1 {
+        font-size: 2.3rem;
+    }
+    .Home-MultiCarousel-Container {
+        margin-top: 2rem;
+    }
+    .Home-MultiCarousel-Container h1 {
+        font-size: 2.3rem;
+    }
+    .home-page .faq-section {
+        padding: 0 3%;
+    }
+    .faq-section .faq-wrapper {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
 @media only screen and (max-width: 1023px) {
     .home-page .service-image-wrapper {
         display: none;
@@ -669,22 +765,17 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .home-page .home-banner {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'content''image';
+    .home-page .home-banner .image-section {
+        display: none;
+    }
+    .home-page .home-banner .banner-content {
+        width: 100%;
     }
 
     .home-page .image-section {
         width: max-content;
         justify-self: center;
-    }
-
-    .home-page .home-banner-img {
-        width: 20rem;
-    }
-
-    .home-page .section-subtitle {
-        margin: 1rem 0;
+        display: none;
     }
 
     .home-page .welcome-section {
@@ -696,10 +787,19 @@
     .home-page .welcome-image-section {
         display: none;
     }
-
+    .home-page .welcome-content h1 {
+        font-size: 2rem;
+    }
+    .home-page .welcome-content p {
+        font-size: 16px;
+    }
+    .home-page .btn-read-more {
+        margin-top: 0;
+    }
     .home-page .features-list {
         flex-direction: column;
         justify-content: center;
+        margin-top: 0;
     }
 
     .home-page .feature-flow {
@@ -709,16 +809,29 @@
     .home-page .feature-card {
         width: 80%;
     }
-
-    .home-page .offered-product-section {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'heading''content';
+    .home-page .feature-content h1 {
+        font-size: 2rem;
     }
-
+    .offered-product-section h1 {
+        font-size: 2rem;
+    }
+    .Tab-Trigger {
+        width: 24%;
+        font-size: 16px;
+        min-width: max-content;
+    }
+    .home-page .contact-section h1 {
+        font-size: 2rem;
+    }
+    .home-page .contact-form {
+        width: 80%;
+    }
     .home-page .op-image-wrapper {
         display: none;
     }
-
+    .home-page .op-content {
+        width: 100%;
+    }
     .home-page .op-content .btns-wrapper {
         display: flex;
         justify-content: center;
@@ -740,12 +853,30 @@
     }
 
     .home-page .know-more-section {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'content';
+        margin-top: 2rem;
+        width: 100%;
     }
-
+    .home-page .know-more-section .know-more-main {
+        padding: 2rem;
+    }
+    .know-more-section .know-more-content {
+        width: 100%;
+        gap: 1rem;
+    }
+    .know-more-section .know-more-content h1 {
+        font-size: 1.8rem;
+    }
+    .know-more-section .know-more-content p {
+        font-size: 1.5rem;
+    }
     .home-page .know-more-image-wrapper {
         display: none;
+    }
+    .Home-MultiCarousel-Container h1 {
+        font-size: 2rem;
+    }
+    .Home-MultiCarousel-Container h1 {
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width:575px) {
@@ -965,7 +1096,7 @@
     }
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:500px) {
     .home-page .home-banner {
         width: 100%;
         display: flex;
@@ -987,78 +1118,99 @@
     }
 
     .home-page .welcome-section {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20rem;
+        padding: 1rem;
+        margin-top: 2rem;
     }
 
     .home-page .home-banner .banner-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         width: 100%;
     }
 
     .home-page .home-banner .banner-content p {
         width: 100%;
         margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+    .home-page .home-banner .banner-content a {
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .home-page .home-banner .banner-content h2 {
         font-size: 1.5rem;
     }
-
     .home-page .home-banner .banner-content a {
         width: 80%;
     }
 
     .home-page .welcome-content h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         width: 100%;
     }
     .home-page .welcome-card{
-        width: 90%;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1rem;
     }
     .home-page .welcome-content p{
         text-align: left;
+        font-size: 0.9rem;
     }
     .home-page .home-banner .heading{
         gap: 0;
     }
     .home-page .features-section {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .home-page .feature-content {
+        width: 100%;
     }
     .home-page .features-list{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
     .home-page .feature-card {
-        width: 80vw;
-        height: 30vh;
-        font-size: 1.5rem;
+        height: 6rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .home-page .feature-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
     }
     .offered-product-section h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
     }
     .home-page .offered-product-section {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
+        margin-top: 0;
     }
     .offered-product-section .main-product-section {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 1rem;
     }
     .home-page .op-content{
-        width: 90%;
+        width: 100%;
     }
     .HomePage-Tab-Container {
         width: 90%;
@@ -1069,18 +1221,21 @@
     .Tab-Triggers-row{
         width: 90%;
     }
+    .home-page .contact-section{
+        margin-top: 1rem;
+    }
     .home-page .contact-section h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
     }
     .home-page .contact-section h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .home-page .contact-form{
         width: 90%;
     }
     .home-page .contact-input {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.5rem;
     }
     .home-page .contact-form .btn-submit {
@@ -1096,17 +1251,18 @@
         margin-top: 2rem;
     }
     .know-more-section .know-more-content{
-        width: 90%;
-        gap: 1rem;
+        width: 100%;
+        gap: 0rem;
 
     }
     .know-more-section .know-more-content h1{
         width: 100%;
         text-align: center;
+        font-size: 1.5rem;
     }
     .know-more-section .know-more-content p{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .know-more-content .btn-about-us {
         width: 80%;
@@ -1114,15 +1270,26 @@
         padding: 0.5rem;
     }
     .home-page .service-section .service-content h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
+        margin-bottom: 1rem;
+    }
+    .Home-Multi-Carousel {
+        width: 100%;
+        padding: 1rem;
     }
     .Home-MultiCarousel-Container h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
+        padding: 0 1rem;
+    }
+    .Multi-Card-Carousel {
+        width: 100%;
+        background-color: #fff6ea;
+        padding: 0;
     }
     .Home-MultiCarousel-Container{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1134,10 +1301,15 @@
         align-items: center;
         position: relative;
     }
-    .Home-Multi-Carousel{
-        width: 100%;
+    .home-page .faq-section{
+        padding: 1rem;
+        margin-top: 0;
     }
-    .Multi-Card-Carousel{
+    .home-page .faq-section h1{
+        font-size: 1.6rem;
+    }
+    .faq-section .faq-wrapper{
         width: 100%;
+        margin-top: 1rem;
     }
 }

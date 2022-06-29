@@ -9,3 +9,4 @@ export default function CustomInput({type, label, name, placeholder, validation,
     </div>
   )
 }
+

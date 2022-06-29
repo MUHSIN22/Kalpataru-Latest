@@ -6,6 +6,13 @@
   padding-top: 2rem;
   gap: 2rem;
 }
+.Applyipo .content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .Applyipo .section-1 {
   width: 100%;
   display: flex;
@@ -46,35 +53,10 @@
 }
 .Applyipo .parent-table {
   box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 20% 10% 10% 10% 10% 10% 10% 10% 10%;
-  margin-top: 4rem;
   width: 80%;
+  margin-top: 2rem;
 }
 
-.parent-table .orange {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.parent-table .yellow {
-  width: 100%;
-  background-color: #f8b84e;
-}
-.parent-table .white {
-  width: 100%;
-  background-color: #ffbe9d;
-  text-align: left;
-  align-items: center;
-}
-.Applyipo .parent-table .orange h4{
-  font-size: 1.2rem;
-  padding: 1rem;
-}
 
 .white p {
   margin: 0;
@@ -108,31 +90,54 @@
 .Applyipo .parent-table .white-button a {
   color: #ffffff;
 }
+@media only screen and (max-width: 1200px) {
+  .Applyipo .section-1 {
+    padding: 1rem;
+  }
+  .Applyipo .section-1 .section-1-image {
+    width: 50%;
+  }
+  .Applyipo .content-wrapper{
+    padding: 1rem;
+  }
+  .Applyipo .h1 {
+    width: 100%;
+  }
+  .Applyipo .mutualFund-header {
+    width: 100%;
+  }
+  .Applyipo .parent-table{
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Applyipo{
+    padding-top: 0;
+  }
+  .Applyipo .section-1 .section-1-content h1 {
+    font-size: 2rem;
+  }
+  .Applyipo .section-title{
+    font-size: 1.3rem;
+  }
+}
 @media only screen and (max-width: 450px) {
   .Applyipo .section-1 {
     width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: column;
+  }
+  .Applyipo .section-1 .section-1-content h1 {
+    font-size: 1.8rem;
+  }
+  .Applyipo .section-1 .section-1-content {
+    width: 100%;
+    text-align: center;
   }
   .Applyipo .section-1 .section-1-image {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .Applyipo .section-1 .section-1-image img {
-    width: 100%;
-  }
-  .Applyipo .section-1 .section-1-content {
-    width: 100%;
-  }
-  .Applyipo .mutualFund-header {
-    width: 90%;
-    padding: 0.8rem;
-  }
-  .Applyipo .h1 {
-    width: 100%;
+    justify-content: center;
   }
 }

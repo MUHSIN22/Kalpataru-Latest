@@ -83,3 +83,80 @@
 .BlogMain .section-2 .blog-main{
     cursor: pointer;
 }
+@media only screen and (max-width: 1200px) {
+    .BlogMain {
+        gap: 0;
+    }
+    .BlogMain .blog-section {
+        gap: 1rem;
+        box-shadow: var(--shadow-primary);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+    .BlogMain .blog-section img {
+        width: 31%;
+        margin-bottom: auto;
+    }
+    .BlogMain .blog-section .blog-content p {
+        font-size: 1.1rem;
+    }
+    .BlogMain .blog-section .blog-content a {
+        width: max-content;
+        font-size: 1rem;
+    }
+    .BlogMain .section-2{
+        margin-top: 2rem;
+    }
+    .BlogMain .section-2 .blog-main {
+        width: 90%;
+        align-items: flex-start;
+    }
+    .BlogMain .section-2 .section-2-content h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .BlogMain .section-2 .section-2-content h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .BlogMain .section-2 .blog-main {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .BlogMain .section-2 .section-2-content {
+        width: 10rem;
+    }
+    .BlogMain .section-2 .section-2-content h2 {
+        font-size: 1.1rem;
+    }
+    .BlogMain h1 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .BlogMain {
+        padding: 1rem;
+        padding-top: 1rem;
+    }
+    .BlogMain .blog-section {
+        width: 100%;
+        flex-direction: column;
+    }
+    .BlogMain .blog-section img{
+        width: 100%;
+    }
+    .BlogMain .blog-section .blog-content p{
+        font-size: 0.9rem;
+    }
+    .BlogMain .section-2 .section-2-content {
+        width: 50%;
+    }
+    .BlogMain h1{
+        font-size: 1.8rem;
+    }
+}

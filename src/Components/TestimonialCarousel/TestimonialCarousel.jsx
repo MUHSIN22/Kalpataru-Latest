@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useRef, useState } from "react";
 import "./TestimonialCarousel.css";
 export default function TestimonialCarousel() {
   const [current, setCurrent] = useState(0);
-
+  const activeItemRef = useRef(null);
   const list = [
     {
       id: 1,
@@ -17,72 +19,105 @@ export default function TestimonialCarousel() {
       image: "/images/Profile-Ellipse.png",
       content: "This is second",
       title: "Software Developer",
-      name: "Alan Neupane",
+      name: "Muhsin N",
     },
     {
       id: 3,
       image: "/images/Profile-Ellipse.png",
       content: "this is third",
       title: "Software Developer",
-      name: "Alan Neupane",
+      name: "Sunny Kumar",
     },
     {
       id: 4,
       image: "/images/Profile-Ellipse.png",
       content: "This is fourth",
       title: "Software Developer",
-      name: "Alan Neupane",
+      name: "Sakshi Pawan",
     },
     {
       id: 5,
       image: "/images/Profile-Ellipse.png",
       content: "this is fifth",
       title: "Software Developer",
-      name: "Alan Neupane",
+      name: "Deepak",
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log(list.length);
-      if (current < list.length - 1) {
-        setCurrent(current + 1);
-      } else {
-        clearInterval();
-        setCurrent(0);
-      }
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [current]);
+  const expandTheCard = (event, index) => {
+    let activeCard = document.querySelector('.active--carousel')
+    if (activeCard) {
+      activeCard.classList.remove('active--carousel')
+    }
+    event.target.classList.add("active--carousel")
+    setCurrent(index)
+  }
+
+  const handleSlide = (dir) => {
+    
+    if(dir === 1 && current < 4){
+      setCurrent((prev) => prev + 1);
+      activeItemRef.current.style.opacity = "0";
+      setTimeout(()=>{
+        activeItemRef.current.style.opacity = "1";
+      },300)
+    }
+    if(dir === -1 && current > 0){
+      setCurrent((prev) => prev - 1)
+      activeItemRef.current.style.opacity = "0";
+      setTimeout(()=>{
+        activeItemRef.current.style.opacity = "1";
+      },300)
+    }
+    
+  }
 
   return (
-    <div className="TestimonialCarousel-Container">
-      <div className="testimonial-container">
-        <h1>Testimonials</h1>
-        <h2>Our Success Story</h2>
-        <div className="testimonial-card">
-          <p>{list[current].content}</p>
+    <div className="testimonial-carousel-container">
+      <h1>Testimonials</h1>
+      <h2>Our Success Story</h2>
+      <div className="dailogue-box">
+        <img src="/icons/quotes.png" className="quotes-icon" alt="" />
+        <p>{list[current].content}</p>
+      </div>
+      <div className="carousel-items-container">
+        <div className="left-slide-icon" onClick={() => handleSlide(-1)}>
+          <FontAwesomeIcon icon={faChevronLeft} />
         </div>
-        <div className="people">
-          {list.map((item) => (
-            <div className={item.id === list[current].id && "big"}>
-              <div className="People-Profile">
-                <img
-                  key={item.id}
-                  src={item.image}
-                  className={item.id === list[current].id}
-                  alt=""
-                />
-              </div>
-
-              {item.id === current + 1 && (
-                <div className="info">
-                  <h4>{item.name}</h4>
-                  <p>{item.title}</p>
-                </div>
-              )}
+        {
+          window.innerWidth > 500 ?
+            <div className="carousel-items-wrapper">
+              {
+                list.map((item, index) => (
+                  <div className={"carousel--item " + (index == 2 ? "active--carousel" : null)} key={index} onClick={(event) => expandTheCard(event, index)}>
+                    <img src="/icons/dailogue.png" alt="" className="dailogue-icon" />
+                    <div className="carousel--item-body">
+                      <img src={item.image} className="profile-img" alt="" />
+                      <div className="profile-details">
+                        <h3 className="profile-name">{item.name}</h3>
+                        <p className="profile-designation">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
-          ))}
+            :
+            <div className="carousel-items-wrapper">
+                  <div className="carousel--item active--carousel" ref={activeItemRef}>
+                    <img src="/icons/dailogue.png" alt="" className="dailogue-icon" />
+                    <div className="carousel--item-body">
+                      <img src={list[current].image} className="profile-img" alt="" />
+                      <div className="profile-details">
+                        <h3 className="profile-name">{list[current].name}</h3>
+                        <p className="profile-designation">{list[current].title}</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        }
+        <div className="right-slide-icon" onClick={() => handleSlide(1)}>
+          <FontAwesomeIcon icon={faChevronRight} />
         </div>
       </div>
     </div>

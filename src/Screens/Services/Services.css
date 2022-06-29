@@ -228,7 +228,7 @@
     15px 15px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .services-page .section-2 p{
   font-weight: 500;
@@ -278,32 +278,107 @@
     .services-page .top-card {
         grid-gap: 1rem;
     }
+    .services-page .section-1{
+      margin: 3rem 0;
+    }
+    .services-page .service-wrapper{
+      width: 100%;
+      overflow-x: hidden;
+      padding: 0 3%;
+    }
+    .services-page .pention-schema-grid {
+      width: 80%;
+    }
+    .services-page .pension-img{
+      margin-top: 1rem;
+    }
 
 }
 
 @media only screen and (max-width: 768px) {
-    .services-page .bond-card {
-        margin-top: 2rem;
-    }
-
-    .services-page .bond-img {
-        margin-top: -4rem;
-    }
-
-    .pention-schema-grid {
-        padding: 1rem;
-    }
+  .services-page .section-1{
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  .services-page .section-1 .section-1-content {
+    width: 100%;
+  }
+  .services-page .section-1 .section-1-content h1 {
+    font-size: 2.5rem;
+  }
+  .services-page .section-1 .section-1-content p {
+    font-size: 1.5rem;
+  }
+  .services-page .section-1-content a {
+    font-size: 1.1rem;
+  }
+  .services-page .bond-card {
+      margin-top: 2rem;
+  }
+  .services-page .bond-img {
+      margin-top: -4rem;
+  }
+  .service-wrapper h1 {
+    font-size: 2rem;
+  }
+  .pention-schema-grid {
+      padding: 1rem;
+  }
+  .services-page .section-1 .section-1-image {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .services-page .service-wrapper h2 {
+    font-size: 1.3rem;
+  }
+  .services-page .service-wrapper .service-accordion p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .services-page .top-card {
+    z-index: 2;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'image' 'content';
+    border-radius: 50px;
+  }
+  .services-page .pension-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-top: -5rem;
+  }
+  .services-page .card-content p {
+    font-size: 1.1rem;
+  }
+  .services-page .card-content {
+    gap: 0.5rem;
+  }
+  .services-page .bottom-card p {
+    font-size: 1.1rem;
+  }
+  .services-page .section-2 p {
+    font-size: 1.1rem;
+  }
+  .services-page .section-2 {
+    border-radius: 30px;
+    margin-top: 5rem;
+  }
+  .services-page .main-title{
+    margin: 1rem 0;
+  }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .services-page .service-wrapper{
       gap: 1rem;
     }
     .services-page .section-1 {
-      width: 100%;
-      display: flex;
+      margin-top: 1rem;
       flex-direction: column;
-      align-items: center;
     }
     .services-page .bond-card {
       grid-template-columns: 1fr;
@@ -311,12 +386,6 @@
       padding: 1rem;
       box-shadow: -4px -4px 20px rgba(197, 63, 63, 0.3),
         15px 15px 20px rgba(0, 0, 0, 0.25);
-    }
-    .services-page .section-1 {
-      width: 100%;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
     }
     .services-page .section-1 .section-1-content {
       width: 100%;
@@ -326,13 +395,14 @@
     }
     .services-page .section-1 .section-1-content h1 {
       width: 100%;
-      font-size: 35px;
+      font-size: 1.8rem;
       text-align: center;
     }
     .services-page .section-1 .section-1-content p {
       width: 100%;
       text-align: center;
-      font-size: 25px;
+      font-size: 1.1rem;
+      margin-bottom: 0;
     }
     .services-page .section-1-content a {
       width: 90%;
@@ -341,7 +411,7 @@
     .service-wrapper h1 {
       width: 100%;
       text-align: center;
-      font-size: 30px;
+      font-size: 1.3rem;
     }
     .services-page .service-wrapper h2{
       width: 100%;
@@ -376,13 +446,30 @@
     }
     .services-page .pention-schema-grid{
       margin-top: 0%;
+      width: 100%;
+    }
+    .services-page .top-card,
+    .services-page .bottom-card {
+      border-radius: 20px;
+    }
+    .services-page .pension-img {
+      height: 6rem;
+      border-radius: 20px;
+      margin-top: 0;
+    }
+    .services-page .card-content {
+      margin-top: 1rem;
     }
     .services-page .bottom-card p{
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     .services-page .card-content p{
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
+    .services-page .btn-see-more{
+      padding: 0.8rem;
+    }
+
     .services-page .main-content h1{
       font-size: 30px;
       margin-top: 0%;
@@ -395,5 +482,32 @@
     }
     .services-page .sub-content p{
       font-size: 1rem;
+    }
+
+    .services-page .section-2{
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(197, 63, 63, 0.3),
+      0 0 10px rgba(0, 0, 0, 0.25);
+      margin-top: 1rem;
+    }
+    .services-page .section-2 .section-2-content {
+      width: 100%;
+      flex-direction: column-reverse;
+      margin-bottom: 0.5rem;
+    }
+    .services-page .section-2 .section-2-content .section-2-image {
+      width: 100%;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    .services-page .section-2 .section-2-content .section-2-col {
+      width: 100%;
+    }
+    .services-page .section-2 p {
+      font-size: 0.9rem;
+    }
+    .services-page .main-title{
+      margin: 1rem 0;
     }
   }

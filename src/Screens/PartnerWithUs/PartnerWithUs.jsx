@@ -9,8 +9,7 @@ export default function PartnerWithUs() {
         <div className="Banner-Content">
           <h1>Partner With Us</h1>
           <p>
-            Our power and entrepreneurial
-            spirit will make it profitable!
+            Branches are strength
           </p>
         </div>
         <div className="Banner-Image">

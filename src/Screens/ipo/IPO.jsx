@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./ipo.css";
+import TablePrimary from "../../Components/TablePrimary/TablePrimary";
+import IPOTable from "../../JSON DB/IPOTable";
 export default function IPO() {
   return (
     <div className="ipo-container">
@@ -8,8 +10,8 @@ export default function IPO() {
         <div className="section-1-content">
           <h1 className="section-title">IPO</h1>
           <p>
-            Buy <span>cheap</span>, earn <span>big</span> Discover IPOs with the highest growth potential
-            early and invest now through Kalpataru to earn big in the future.
+            Discover  IPOs with the highest growth potential
+            early and invest now through Kalpataru to earn big in the future...
           </p>
           <Link to="/apply-ipo">Apply IPO</Link>
         </div>
@@ -55,7 +57,8 @@ export default function IPO() {
           <h1 className="section-title">IPO Listing</h1>
         </div>
         <div className="parent-table">
-          <div className="orange border-right">
+          <TablePrimary data={IPOTable}/>
+          {/* <div className="orange border-right">
             <h4>IOP Name</h4>
           </div>
           <div className="orange border-right">
@@ -126,7 +129,7 @@ export default function IPO() {
           </div>
           <div className="white border border-right border-bottom">
             <p>30-06-2022</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

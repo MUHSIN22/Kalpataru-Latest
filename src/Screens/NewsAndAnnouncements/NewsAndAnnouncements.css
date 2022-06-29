@@ -149,12 +149,83 @@
   .Top-Gainer-Header {
     padding: 1.2rem;
   }
+  .NnA-Banner-Content h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .NnA-Banner-Content p {
+    font-size: 1.5rem;
+  }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
+  .NewsAndAnnouncements-Container {
+    padding: 1rem;
+  }
+  .NnA-Banner {
+    flex-direction: column;
+  }
+  .NnA-Banner-Content {
+    width: 100%;
+    gap: 1rem;
+  }
+  .NnA-Banner-Content h1 {
+    font-size: 2rem;
+  }
+  .NnA-Banner-Content p {
+    font-size: 1.3rem;
+  }
+  .NnA-Banner-Image {
+    width: 70%;
+  }
+  .IPO-Container {
+    width: 100%;
+  }
+  .IPO-row-image {
+    width: 50%;
+  }
+  .IPO-row-Content p {
+    font-size: 1.1rem;
+  }
+  .IPO-Header h2 {
+    font-size: 1.3rem;
+  }
+  .IPO-Header {
+    padding: 1rem;
+  }
+  .IPO-Col h3 {
+    font-size: 1.3rem;
+  }
+  .Top-Gainer-Container {
+    width: 100%;
+  }
+  .Top-Gainer-Header h2 {
+    font-size: 1.3rem;
+  }
+  .Top-Gainer-Header {
+    padding: 1rem;
+  }
+  .Top-Gainer-Col {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Col-Grid-Row h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .Col-Grid-Row p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .NewsAndAnnouncements-Container{
+    margin-top: 0;
+  }
   .NnA-Banner {
     width: 95%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
   .NnA-Banner-Content {
@@ -164,11 +235,21 @@
   .NnA-Banner-Image {
     width: 100%;
   }
+  .NnA-Banner-Content h1 {
+    font-size: 1.8rem;
+  }
+  .NnA-Banner-Content p {
+    font-size: 1.1rem;
+    width: 90%;
+  }
   .IPO-Container {
-    width: 95%;
+    width: 100%;
   }
   .IPO-Header {
     padding: 0.8rem;
+  }
+  .IPO-Header h2 {
+    font-size: 1.1rem;
   }
   .IPO-row {
     width: 100%;
@@ -186,12 +267,36 @@
     width: 100%;
   }
   .Top-Gainer-Container {
-    width: 95%;
+    width: 100%;
   }
   .Top-Gainer-Header {
     padding: 0.8rem;
   }
+  .Top-Gainer-Header h2 {
+    font-size: 1.1rem;
+  }
   .Top-Gainer-Col {
     width: 100%;
+  }
+  .Col-Grid-Row {
+    grid-row-gap: 1rem;
+    grid-column-gap: 0;
+  }
+  .IPO-Col h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+  }
+  .IPO-row-Content p {
+    font-size: 1rem;
+  }
+  .Col-Grid-Row h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .Col-Grid-Row p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
   }
 }

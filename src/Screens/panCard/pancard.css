@@ -97,6 +97,9 @@
   margin: 0;
   font-size: 1.2rem;
 }
+.PanCard .doc-table-wrapper{
+  width: 90%;
+}
 @media only screen and (max-width: 768px) {
   .PanCard .section-1 {
     flex-direction: column;
@@ -120,6 +123,9 @@
     width: 100%;
   }
   .PanCard .mutualFund-header {
+    width: 100%;
+  }
+  .PanCard .doc-table-wrapper{
     width: 100%;
   }
   .PanCard .section-3 .section-3-content-row {
@@ -166,5 +172,8 @@
     padding: 1rem;
     margin-top: 0;
     padding-top: 0;
+  }
+  .doc-table-wrapper{
+    overflow-x: scroll;
   }
 }

@@ -8,7 +8,7 @@ export default function Login() {
       <div className="Login-Block">
         <div className="Block-Image">
           <img src="/images/Login-image.png" alt="" />
-          <h3>Welcome to Kalpataru</h3>
+          <h3>Welcome to <span>Kalpataru</span></h3>
         </div>
         <div className="Block-inputs">
           <div className="Inputs-Col">

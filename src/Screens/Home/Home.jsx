@@ -22,7 +22,7 @@ export default function Home() {
                 </div>
                 <div className="banner-content">
                     <div className="top-content">
-                    <img src='/images/home-logo.png' alt='' />
+                    {/* <img src='/images/home-logo.png' alt='' /> */}
                     <p>Trusted by many people.... </p>
                     <h2>Start investing Today </h2>
                     </div>
@@ -37,9 +37,6 @@ export default function Home() {
                         </div>
                         <div className="item">
                             <h1><span>Stock</span></h1>
-                        </div>
-                        <div className="item">
-                            <h1><span>Trading</span></h1>
                         </div>
                       </div>
                     </div>
@@ -132,7 +129,7 @@ export default function Home() {
             <div className="know-more-section">
                 <div className="know-more-main">
                     <div className="know-more-content">
-                        <h1>Want to know more about Kalpataru ?</h1>
+                        <h1>Want to know more about Kalpataru?</h1>
                         <p>Click here to know more...</p>
                         <Link to='/aboutUs' className="btn-about-us">About Us</Link>
                     </div>
@@ -147,16 +144,17 @@ export default function Home() {
                     <h1>Our Services</h1>
                     <div className="service-content-main">
                     <div className="service-cards-wrapper">
-                    <div className="service-card">
-                            <h6 className="card-title"><a href='/services'>Mutual Fund</a></h6>
-                            <img src="/images/home/s1.png" alt="" className="service-card-img" />
-                        </div>
+                        
                         <div className="service-card">
                             <h6 className="card-title"><a href='/trading'>Trading</a></h6>
                             <img src="/images/home/s2.png" alt="" className="service-card-img" />
                         </div>
                         <div className="service-card">
-                            <h6 className="card-title"><a href='depository'>Depository</a></h6>
+                            <h6 className="card-title"><a href='/services'>Mutual Fund</a></h6>
+                            <img src="/images/home/s1.png" alt="" className="service-card-img" />
+                        </div>
+                        <div className="service-card">
+                            <h6 className="card-title"><a href='depository'>Demat Services</a></h6>
                             <img src="/images/home/s3.png" alt="" className="service-card-img" />
                         </div>
                         <div className="service-card">
@@ -172,11 +170,11 @@ export default function Home() {
                             <img src="/images/home/s6.png" alt="" className="service-card-img" />
                         </div>
                         <div className="service-card">
-                            <h6 className="card-title"><a href='/sgb'>SGB</a></h6>
+                            <h6 className="card-title"><a href='/sgb'>Sovereign Gold Bonds</a></h6>
                             <img src="/images/home/s7.png" alt="" className="service-card-img" />
                         </div>
                         <div className="service-card">
-                            <h6 className="card-title">Others</h6>
+                            <h6 className="card-title">National Pension Schema</h6>
                             <img src="/images/home/s8.png" alt="" className="service-card-img" />
                         </div>
                     </div>

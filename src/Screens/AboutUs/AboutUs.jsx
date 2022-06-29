@@ -6,7 +6,7 @@ export default function AboutUs() {
       <div className="AboutUs-Banner">
         <div className="AboutUs-Banner-Content">
           <h1>About Us</h1>
-          <p>Years of Trust Won by Customer First Approach</p>
+          <p> Central India's most trusted,time tested and transparent</p>
         </div>
         <div className="AboutUs-Banner-Image">
           <img src="/images/AboutUs-image.png" alt="" />

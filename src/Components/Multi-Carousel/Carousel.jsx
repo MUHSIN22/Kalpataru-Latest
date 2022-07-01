@@ -24,7 +24,7 @@ export default function MultiCarousel() {
   };
   return (
     <div className="Multi-Card-Carousel">
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} swipeable={true}>
         <div className="Multi-Card-Slide">
           <div className="Slide-Image">
             <iframe

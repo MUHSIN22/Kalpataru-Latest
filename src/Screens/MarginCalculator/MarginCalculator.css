@@ -83,6 +83,11 @@
     flex-direction: column;
     align-items: center;
 }
+.margin-calculator-page .contact-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width: 1300px) {
     .margin-banner{
         height: auto;

@@ -73,7 +73,7 @@ export default function Home() {
                     <h1>Features</h1>
                     <div className="features-list">
                         <div className="feature-card">
-                            Expert Advidsory
+                            Expert Advisory
                         </div>
                         <div className="feature-flow">
                             <FontAwesomeIcon icon={faArrowRight} />

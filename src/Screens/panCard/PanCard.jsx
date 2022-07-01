@@ -22,7 +22,7 @@ export default function PanCard() {
       </div>
       <div className="section-3">
         <div className="mutualFund-header">
-          <h1>How to apply for PAN Card</h1>
+          <h1>How to apply for PAN Card?</h1>
         </div>
         <div className="section-3-content">
           <p>

@@ -20,7 +20,7 @@ export default function PartnerWithUs() {
         <h1 >Benefit of Our association</h1>
         <div className="Benefits-Block">
           <p >
-          An investment partner, also known as an investment firm, is a business that accepts funds from organisations and individuals and then invests it for a profit. Investment partner companies pool client funds to purchase investments on behalf of their clients. The way companies invest, what assets they buy, and who their customers are are all different. Based on their experience, aims, and investment strategy, a company's philosophy is formed.
+          An investment partner, also known as an investment firm, is a business that accepts funds from organisations and individuals and then invests it for a profit. Investment partner companies pool client funds to purchase investments on behalf of their clients. The way companies invest, what assets they buy, and who their customers are all different. Based on their experience, aims, and investment strategy, a company's philosophy is formed.
           </p>
           <p >
           When acquiring a business, many companies prefer to be involved in all aspects of day-to-day operations, including sales, marketing, human resources, and so on. Investing with a financial counsellor is very different from investing with a financial partner. In addition to deciding what to invest in, an investment partner is also involved in managing the asset.

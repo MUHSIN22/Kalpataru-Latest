@@ -1,7 +1,7 @@
 export default [
     {
         question: "Why Should You Invest?",
-        description: "Making wise financial decisions now will protect your assets for the foreseeable future. It's a great way to build your wealth while also generating returns that outpace inflation. Compounding also works in your favor.",
+        description: "Making wise financial decisions now will protect your assets for the foreseeable future. It's a great way to build your wealth while also generating returns that outpace inflation. Compounding also works in your favour.",
         img:"f1.png"
     },
     {

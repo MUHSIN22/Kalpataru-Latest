@@ -21,6 +21,7 @@
     padding: 0.5rem;
     border-right: 2px solid var(--dark-primary);
     border-bottom: 2px solid var(--dark-primary);
+    text-align: center;
 }
 .table-primary .btn-primary{
      background: var(--dark-primary);
@@ -30,6 +31,9 @@
      font-size: 1rem;
      margin-left: 1rem;
      display: inline-block;
+}
+.table-primary .colored-link{
+    color: var(--red-primary);
 }
 
 @media only screen and (max-width: 500px) {

@@ -22,6 +22,9 @@
   justify-content: center;
   gap: 1rem;
 }
+.Applymatualfundlink .row .col h3{
+  text-align: center;
+}
 .Applymatualfundlink .row .col span {
   font-weight: bold;
 }
@@ -46,6 +49,7 @@
 }
 .Applymatualfundlink .customInput label{
     color: black;
+    margin-left: 2px;
 }
 .Applymatualfundlink button {
   width: 18%;
@@ -57,34 +61,64 @@
   border-radius: 0.8rem;
   cursor: pointer;
 }
-@media only screen and (max-width: 450px) {
+.Applymatualfundlink input[type="checkbox"]{
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Applymatualfundlink{
+    padding: 1rem;
+  }
+  .Applymatualfundlink .section-title{
+    width: 80%;
+  }
+  .Applymatualfundlink .row {
+    width: 100%;
+  }
+  .Applymatualfundlink .row .col h3 {
+    font-size: 1.3rem;
+  }
+  .Applymatualfundlink .form {
+    width: 100%;
+  }
+  .Applymatualfundlink button {
+    width: 15rem;
+    background-color: #103e60;
+    color: #fff6ea;
+    padding: 8px;
+    border: none;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
   .Applymatualfundlink {
     gap: 1rem;
   }
   .Applymatualfundlink .row {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .Applymatualfundlink .row .col {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .Applymatualfundlink .form {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 0%;
   }
-  .Applymatualfundlink .customInput{
+  .Applymatualfundlink .row .col{
+    gap: 3px;
+  }
+  .Applymatualfundlink .row .col h3 {
+    font-size: 1.1rem;
+    text-align: left;
     width: 100%;
   }
-  .Applymatualfundlink button{
-    width: 50%;
+  .Applymatualfundlink .row .col p{
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .Applymatualfundlink .form h3{
+    font-size: 1.1rem;
+  }
+  .Applymatualfundlink .section-title {
+    width: 100%;
+  }
+  .Applymatualfundlink .customInput {
+    width: 100%;
   }
 }

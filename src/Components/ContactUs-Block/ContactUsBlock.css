@@ -7,7 +7,7 @@
 }
 .ContactUs-Card {
   width: 100%;
-  height: 50vh;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,13 +19,13 @@
 .ContactUs-Upper-Cup {
   width: 10%;
   position: absolute;
-  top: 20%;
+  top: 13%;
   left: 5%;
 }
 .ContactUs-Lower-Cup {
   width: 10%;
   position: absolute;
-  top: 70%;
+  bottom: 13%;
   right: 10%;
 }
 .ContactUs-link {
@@ -49,6 +49,20 @@
   }
   .ContactUs-link{
     width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ContactUs-Card{
+    padding: 2rem 1rem;
+    text-align: center;
+    height: max-content;
+  }
+  .ContactUs-Lower-Cup,
+  .ContactUs-Upper-Cup{
+    display: none;
+  }
+  .ContactUs-link {
+    width: max-content;
   }
 }
 @media only screen and (max-width: 450px) {

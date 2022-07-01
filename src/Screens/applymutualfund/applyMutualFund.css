@@ -26,11 +26,7 @@
 }
 
 .ApplyMutualFund .parent-table {
-  box-shadow: 0 4px 28px 0 rgba(31, 38, 135, 0.3);
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 20% 10% 25% 10% 10% 15% 10%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   width: 80%;
 }
 
@@ -89,13 +85,33 @@
   border-radius: 0.8rem;
   cursor: pointer;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
+  .ApplyMutualFund{
+    padding: 1rem;
+  }
   .ApplyMutualFund .mutualFund-content .mutualFund-header {
-    width: 95%;
+    width: 100%;
+  }
+  .ApplyMutualFund .section-title{
+    font-size: 1.5rem;
+  }
+  .ApplyMutualFund .parent-table {
+    margin-top: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .contect-info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ApplyMutualFund .mutualFund-content .mutualFund-header {
     padding: 0.8rem;
   }
   .ApplyMutualFund .parent-table {
-    width: 95%;
-    margin-top: 0%;
+    margin-top: 0;
+  }
+  .ApplyMutualFund .section-title {
+    font-size: 1.3rem;
   }
 }

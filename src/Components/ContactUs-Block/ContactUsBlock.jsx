@@ -10,7 +10,7 @@ export default function ContactUsBlock() {
           alt=""
           className="ContactUs-Upper-Cup"
         />
-        <h1>Didn’t Find what you were Looking For ?</h1>
+        <h1>Didn’t Find what you were Looking For?</h1>
         <Link to='/contact-us' className="ContactUs-link">Contact Support</Link>
         <img
           src="/images/ContactUs-Cup2.png"

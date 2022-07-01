@@ -62,7 +62,7 @@ export default function Trading() {
       </div>
       <div className="trading-section-3">
         <h1>Comodity</h1>
-        <Accordion title="What is Comodity?">
+        <Accordion title="What is Commodity?">
           <div className="contect-info">
             <div className="contect-info-content">
               <p>

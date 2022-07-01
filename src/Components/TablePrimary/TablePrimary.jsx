@@ -21,7 +21,12 @@ export default function TablePrimary({data:{head,body}}) {
                         {
                             bodyData.map((item,key) => (
                                 <td key={key} className="section-para">
-                                    <span>{item.value}</span>
+                                    {
+                                        item.color?
+                                        <Link to={item.link} className="colored-link">{item.value}</Link>
+                                        :
+                                        <span>{item.value}</span>
+                                    }
                                     {
                                         item.button&&
                                         <Link to={item.link} className={item.type}>{item.button}</Link>

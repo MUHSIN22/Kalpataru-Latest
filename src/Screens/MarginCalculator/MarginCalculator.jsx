@@ -2,6 +2,7 @@ import React from 'react'
 import Pagination from '../../Components/pagination/Pagination'
 import './MarginCalculator.css'
 import TableTab from '../../Components/TableTabs/TableTab'
+import ContactUsBlock from '../../Components/ContactUs-Block/ContactUsBlock'
 
 export default function MarginCalculator() {
     return (
@@ -18,6 +19,9 @@ export default function MarginCalculator() {
             <div className="Margin-Table">
                 <TableTab />
                 <Pagination />
+            </div>
+            <div className="contact-wrapper">
+                <ContactUsBlock/>
             </div>
         </main>
     )

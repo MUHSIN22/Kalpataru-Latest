@@ -15,7 +15,7 @@ export default function Depository() {
             </div>
             <div className="section-3">
                 <div className="mutualFund-header">
-                    <h1>What is depository ?</h1>
+                    <h1>What is depository?</h1>
                 </div>
                 <div className="section-3-content">
                 <p>

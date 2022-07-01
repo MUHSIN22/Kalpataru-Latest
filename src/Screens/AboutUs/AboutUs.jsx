@@ -38,37 +38,94 @@ export default function AboutUs() {
           </p>
         </div>
       </div>
+
+      <div className="about-milestone-container">
+        <h1>Milestone Reached</h1>
+        <img src="/images/about us/about success.png" className="about-success-img" alt="" />
+        <div className="milestone-cards-wrapper">
+          
+          <div className="milestone-card">
+            <img src="/images/about us/m1.png" className="milestone-img" alt="" />
+            <h3 className="milestone-title">2000</h3>
+            <p className="milestone-description">
+              Kalpataru is a spectrum of vision, vibgyor, 
+              style, standard, creativity, craze and 
+              honesty. All the seven colours of share 
+              business can be felt and enjoyed in Kalpataru. 
+            </p>
+          </div>
+
+          <div className="milestone-card">
+            <img src="/images/about us/m2.png" className="milestone-img" alt="" />
+            <h3 className="milestone-title">2005</h3>
+            <p className="milestone-description">
+              Kalpataru is a spectrum of vision, vibgyor , 
+              style, standard, creativity, craze and 
+              honesty. All the seven colours of share 
+              business can be felt and enjoyed in Kalpataru. 
+            </p>
+          </div>
+
+          <div className="milestone-card">
+            <img src="/images/about us/m3.png" className="milestone-img" alt="" />
+            <h3 className="milestone-title">2012</h3>
+            <p className="milestone-description">
+              Kalpataru is a spectrum of vision, vibgyor , 
+              style, standard, creativity, craze and 
+              honesty. All the seven colours of share 
+              business can be felt and enjoyed in Kalpataru. 
+            </p>
+          </div>
+
+          <div className="milestone-card">
+            <img src="/images/about us/m4.png" className="milestone-img" alt="" />
+            <h3 className="milestone-title">2015</h3>
+            <p className="milestone-description">
+              Kalpataru is a spectrum of vision, vibgyor , 
+              style, standard, creativity, craze and 
+              honesty. All the seven colours of share 
+              business can be felt and enjoyed in Kalpataru. 
+            </p>
+          </div>
+
+          <div className="milestone-card">
+            <img src="/images/about us/m5.png" className="milestone-img" alt="" />
+            <h3 className="milestone-title">2022</h3>
+            <p className="milestone-description">
+              Kalpataru is a spectrum of vision, vibgyor , 
+              style, standard, creativity, craze and 
+              honesty. All the seven colours of share 
+              business can be felt and enjoyed in Kalpataru. 
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="Meet-The-Team-Container">
         <h1>Meet The Team</h1>
         <div className="Team-Grid-Container">
           <div className="Team-Cards-Grid">
             <div className="Team-Card">
-              <img src="/images/Team-Img1.png" alt="" />
               <h4>Ramesh Manya Jain</h4>
               <p className="section-para">Chairman</p>
             </div>
             <div className="Team-Card">
-              <img src="/images/Team-Img2.png" alt="" />
               <h4>Aditya Manya Jain</h4>
               <p className="section-para">Vice Chairman</p>
             </div>
             <div className="Team-Card">
-              <img src="/images/Team-Img3.png" alt="" />
               <h4>Amitabh Manya Jain</h4>
               <p className="section-para">Managing Director</p>
             </div>
             <div className="Team-Card">
-              <img src="/images/Team-Img4.png" alt="" />
               <h4>Sharda Manya Jain</h4>
               <p className="section-para">Director</p>
             </div>
             <div className="Team-Card">
-              <img src="/images/Team-Img5.png" alt="" />
               <h4>Savita Manya Jain</h4>
               <p className="section-para">Director</p>
             </div>
             <div className="Team-Card">
-              <img src="/images/Team-Img6.png" alt="" />
               <h4>Ramesh Manya Jain</h4>
               <p className="section-para">Director</p>
             </div>
@@ -86,10 +143,21 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="Container-Images">
-            <img src="/images/Achievement-image1.png" alt="" />
-            <img src="/images/Achievement-image2.png" alt="" />
-            <img src="/images/Achievement-image3.png" alt="" />
-            <img src="/images/Achievement-image4.png" alt="" />
+            <div className="achievement-wrapper">
+              <img src="/images/about us/achievement 1.png" alt="" className="achievement-image" />
+            </div>
+            <div className="achievement-wrapper">
+              <img src="/images/about us/achievement 2.png" alt="" className="achievement-image" />
+            </div>
+            <div className="achievement-wrapper">
+              <img src="/images/about us/achievement 3.png" alt="" className="achievement-image" />
+            </div>
+            <div className="achievement-wrapper">
+              <img src="/images/about us/achievement 4.png" alt="" className="achievement-image" />
+            </div>
+            <div className="achievement-wrapper">
+              <img src="/images/about us/achievement 5.png" alt="" className="achievement-image" />
+            </div>
           </div>
         </div>
       </div>

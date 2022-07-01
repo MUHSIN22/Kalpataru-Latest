@@ -54,18 +54,18 @@ export default function Footer() {
            <p>T. T. Nagar, Bhopal-462003</p>
         </div>
         <div className="section-4">
-          <Link to='/'>Seurity Policy</Link>
+          <Link to='/'>Security Policy</Link>
           <Link to='/'>Policies and Procedure</Link>
           <Link to='/'>PMLA Policy</Link>
           <Link to='/'> Surveillance Policy</Link>
           <Link to='/privacy-policy'>Privacy Policy</Link>
           <Link to='/'>Branch Supervision Policy</Link>
-          <Link to='/'>Sebi Complaint</Link>
+          <Link to='/'>SEBI Complaint</Link>
           <Link to='/'> Investor Charter</Link>
         </div>
         <div className="section-5">
           <Link to='/'>Disclaimer</Link>
-          <Link to='/'>RMS Ploicy</Link>
+          <Link to='/'>RMS Policy</Link>
           <Link to='/'>Useful Links</Link>
           <Link to='/'>Careers</Link>
           <Link to='/'>Internal Office
@@ -74,11 +74,11 @@ export default function Footer() {
 
         </div>
         <div className="section-6">
-          <p>Call Us :</p>
+          <p>Call Us:</p>
          <a href="tel:+91-9425008895 ">9425008895</a>
         <a href="tel:+91-0755-4276725"> 0755-4276725</a>
        <a href='tel:+91-0755-4276726'>0755-4276726</a>
-       <p>Email Us : <a href = "kmlho@kalpatarumulti.com">kmlho@kalpatarumulti.com</a></p>
+       <p>Email Us: <a href = "kmlho@kalpatarumulti.com">kmlho@kalpatarumulti.com</a></p>
         </div>
       </div>
     </div>

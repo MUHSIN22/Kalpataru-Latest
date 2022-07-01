@@ -574,6 +574,68 @@
     background-color: #fff6ea;
     padding: 2rem;
 }
+.Home-MultiCarousel-Container .slider-wrapper{
+    width: 100%;
+    background: #FFF6EA;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+.Home-MultiCarousel-Container .slider-container{
+    width: 80%;
+    overflow-x: hidden;
+    cursor: grab;
+}
+.Home-MultiCarousel-Container .slider--item{
+    margin: 1rem;
+    background: #fff;
+    box-shadow: var(--shadow-primary);
+    position: relative;
+    transition: all 0.3s ease;
+}
+.Home-MultiCarousel-Container .active-slider--item{
+    transform: scale(1.05);
+}
+.Home-MultiCarousel-Container .active-slider--item::before{
+    display: none;
+}
+.Home-MultiCarousel-Container .slider--item::before{
+    background: #CD050D40;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Home-MultiCarousel-Container .slide-content{
+    padding: 1rem;
+    text-align: center;
+}
+.Home-MultiCarousel-Container h3{
+    font-size: 1.5rem;
+}
+.Home-MultiCarousel-Container .media-wrapper{
+    width: 100%;
+}
+.Home-MultiCarousel-Container iframe{
+    width: 100%;
+}
+.Home-MultiCarousel-Container .carousel-navigator-right,
+.Home-MultiCarousel-Container .carousel-navigator-left{
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    color: #CD050D;
+    cursor: pointer;
+}
+.Home-MultiCarousel-Container .carousel-navigator-right{
+    right: 5%;
+}
+.Home-MultiCarousel-Container .carousel-navigator-left{
+    left: 5%;
+}
 
 /* FAQ section */
 .home-page .faq-section {
@@ -878,6 +940,12 @@
     .Home-MultiCarousel-Container h1 {
         font-size: 2rem;
     }
+    .Home-MultiCarousel-Container .active-slider--item{
+        transform: scale(1);
+    }
+    .Home-MultiCarousel-Container .slider--item::before{
+        display: none;
+    }
 }
 @media only screen and (max-width:575px) {
     .home-page .home-banner {
@@ -1054,6 +1122,20 @@
     }
     .Multi-Card-Carousel{
         width: 100%;
+    }
+    .Home-MultiCarousel-Container .slider-container {
+        width: 100%;
+        overflow-x: hidden;
+        cursor: grab;
+    }
+    .Home-MultiCarousel-Container h3 {
+        font-size: 1.2rem;
+    }
+    .Home-MultiCarousel-Container p {
+        font-size: 0.9rem;
+    }
+    .Home-MultiCarousel-Container .slide-content {
+        padding: 0.5rem;
     }
 }
 @media only screen and (max-width: 500px) {

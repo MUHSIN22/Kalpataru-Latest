@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './HomeSlider.css'
 
-export default function HomeSlider({itemMargin,itemsPerWindow,children}) {
+export default function HomeSlider({itemMargin,itemsPerWindow,children, slideShifter, setSlideShifter}) {
     const sliderRef = useRef(null)
     const [gridWidth,setGridWidth] = useState(0)
     const [itemCount,setItemCount] = useState(0)
@@ -20,13 +20,19 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children}) {
         cw = width
         ic = childCount;
         setItemCount(childCount)
-        
         sliderRef.current.onmousedown = dragStart;
         sliderRef.current.ontouchstart = dragStart
         sliderRef.current.ontouchend = dragEnd;
-    },[])
+    },[itemsPerWindow])
 
-    
+    useEffect(() => {
+        console.log(slideShifter);
+        if(slideShifter !== 0){
+            shiftSlide(slideShifter)
+            console.log("here");
+            setSlideShifter(0)
+        }
+    },[slideShifter])
 
 
     const dragStart = (event) => {
@@ -61,15 +67,17 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children}) {
 
     const shiftSlide = (direction) => {
         if(direction === -1){
-            console.log(cw);
-            console.log(cardIndex,-(ic - itemsPerWindow));
-            if(cardIndex > -(ic - itemsPerWindow)){
-                setMarginLeft((prev) => prev - cw);   
+            console.log("---------------------1");
+            console.log(cardIndex,sliderRef.current.children.length,itemsPerWindow);
+            if(cardIndex > -(sliderRef.current.children.length - itemsPerWindow)){
+                console.log('ic');
+                console.log(gridWidth);
+                setMarginLeft((prev) => prev - gridWidth);   
                 cardIndex--;
             }
             // if(cardIndex >= )
         }else{
-            console.log(cardIndex,(ic - itemsPerWindow));
+            console.log("1111111111111111111111");
             if(cardIndex < 0){
                 setMarginLeft((prev) => prev + cw);   
                 cardIndex++;

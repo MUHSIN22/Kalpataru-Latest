@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Home.css'
 import MultiCarousel from '../../Components/Multi-Carousel/Carousel'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeftLong, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import FaqCard from '../../Components/FaqCard/FaqCard';
@@ -12,6 +12,32 @@ import HomeTab from '../../Components/homeTabs/HomeTab'
 import FlotingButton from '../floatingButton/FlotingButton'
 
 export default function Home() {
+    const [slideShifter,setSlideShifter] = useState(0)
+    const [sliderPerWindow,setSliderPerWindow] = useState(5)
+
+    const sliderStatusChanger = (event) => {
+        let activeSlider = document.querySelector('.active-slider--item');
+        if(activeSlider){
+            activeSlider.classList.remove('active-slider--item')
+        }
+        if(event.target.className === "slider--item"){
+            event.target.classList.add('active-slider--item')
+        }else{
+            event.target.closest(".slider--item").classList.add('active-slider--item')
+        }
+    }
+
+    useEffect(() => {
+        if(window.innerWidth <= 500){
+            setSliderPerWindow(1)
+        }else if(window.innerWidth <= 768){
+            setSliderPerWindow(2)
+        }else if(window.innerWidth <= 1250){
+            setSliderPerWindow(3)
+        }else if(window.innerWidth <= 1600){
+            setSliderPerWindow(4)
+        }
+    },[])
 
     return (
         <main className="home-page">
@@ -22,29 +48,29 @@ export default function Home() {
                 </div>
                 <div className="banner-content">
                     <div className="top-content">
-                    {/* <img src='/images/home-logo.png' alt='' /> */}
-                    <p>Trusted by many people.... </p>
-                    <h2>Start investing Today </h2>
+                        {/* <img src='/images/home-logo.png' alt='' /> */}
+                        <p>Trusted by many people.... </p>
+                        <h2>Start investing Today </h2>
                     </div>
                     <div className="heading">
                         <h1>Invest in</h1>
-                      <div className="wrapper">
-                        <div className="item">
-                            <h1><span> Mutual Funds</span></h1>
+                        <div className="wrapper">
+                            <div className="item">
+                                <h1><span> Mutual Funds</span></h1>
+                            </div>
+                            <div className="item">
+                                <h1><span>IPO</span></h1>
+                            </div>
+                            <div className="item">
+                                <h1><span>Stock</span></h1>
+                            </div>
                         </div>
-                        <div className="item">
-                            <h1><span>IPO</span></h1>
-                        </div>
-                        <div className="item">
-                            <h1><span>Stock</span></h1>
-                        </div>
-                      </div>
                     </div>
                     <Link to='/signup'>Get Started</Link>
                 </div>
 
             </div>
-<FlotingButton/>
+            <FlotingButton />
             <div className="welcome-section">
                 <div className="welcome-content">
                     <h1 className="section-title">Welcome to <span>Kalpataru</span> Multiplier Ltd.</h1>
@@ -104,7 +130,7 @@ export default function Home() {
                         <img src="/images/home/offered-product.png" alt="" />
                     </div>
                     <div className="op-content">
-                      <HomeTab/>
+                        <HomeTab />
                     </div>
                 </div>
             </div>
@@ -143,55 +169,187 @@ export default function Home() {
                 <div className="service-content">
                     <h1>Our Services</h1>
                     <div className="service-content-main">
-                    <div className="service-cards-wrapper">
-                        
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/trading'>Trading</a></h6>
-                            <img src="/images/home/s2.png" alt="" className="service-card-img" />
+                        <div className="service-cards-wrapper">
+
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/trading'>Trading</a></h6>
+                                <img src="/images/home/s2.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/services'>Mutual Fund</a></h6>
+                                <img src="/images/home/s1.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='depository'>Demat Services</a></h6>
+                                <img src="/images/home/s3.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/ipo'>IPO</a></h6>
+                                <img src="/images/home/s4.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/general-insurenece'>General Insurance</a></h6>
+                                <img src="/images/home/s5.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/pancard'>PAN Card</a></h6>
+                                <img src="/images/home/s6.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title"><a href='/sgb'>Sovereign Gold Bonds</a></h6>
+                                <img src="/images/home/s7.png" alt="" className="service-card-img" />
+                            </div>
+                            <div className="service-card">
+                                <h6 className="card-title">National Pension Schema</h6>
+                                <img src="/images/home/s8.png" alt="" className="service-card-img" />
+                            </div>
                         </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/services'>Mutual Fund</a></h6>
-                            <img src="/images/home/s1.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='depository'>Demat Services</a></h6>
-                            <img src="/images/home/s3.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/ipo'>IPO</a></h6>
-                            <img src="/images/home/s4.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/general-insurenece'>General Insurance</a></h6>
-                            <img src="/images/home/s5.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/pancard'>PAN Card</a></h6>
-                            <img src="/images/home/s6.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title"><a href='/sgb'>Sovereign Gold Bonds</a></h6>
-                            <img src="/images/home/s7.png" alt="" className="service-card-img" />
-                        </div>
-                        <div className="service-card">
-                            <h6 className="card-title">National Pension Schema</h6>
-                            <img src="/images/home/s8.png" alt="" className="service-card-img" />
+                        <div className="service-image-wrapper">
+                            <img src="/images/home/service.png" alt="" className="service-image" />
                         </div>
                     </div>
-              <div className="service-image-wrapper">
-                    <img src="/images/home/service.png" alt="" className="service-image" />
-                </div>
-                </div>
                 </div>
             </div>
 
 
             <div className="Home-MultiCarousel-Container">
-        <h1>Clients’ Testimonials</h1>
-        <div className="Home-Multi-Carousel">
-          <MultiCarousel />
-        </div>
-      </div>
+                <h1>Clients’ Testimonials</h1>
+                <div className="slider-wrapper">
+                    <FontAwesomeIcon className='carousel-navigator-left' icon={faArrowLeftLong} onClick={() => setSlideShifter(-1)} />
+                    <div className="slider-container">
+                        <HomeSlider itemsPerWindow={sliderPerWindow} slideShifter={slideShifter} setSlideShifter={setSlideShifter}>
+                            <div className="slider--item active-slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+                            
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item ">
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+
+                            <div className="slider--item" onMouseOver={sliderStatusChanger}>
+                                <div className="media-wrapper">
+                                    <iframe
+                                      src="https://www.youtube.com/embed/_ExsJZxhvDY"
+                                      title="YouTube video player"
+                                      frameborder="0"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <div className="slide-content">
+                                    <h3>Akash Singh</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempore consequatur ad? Voluptates, eos aut?</p>
+                                </div>
+                            </div>
+                        </HomeSlider>
+                    </div>
+                    <FontAwesomeIcon className='carousel-navigator-right' icon={faArrowRightLong} onClick={() => setSlideShifter(1)} />
+                </div>
+            </div>
 
             <section className="faq-section">
                 <h1>FAQ's</h1>

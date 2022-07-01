@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="banner-content">
                     <div className="top-content">
                         {/* <img src='/images/home-logo.png' alt='' /> */}
-                        <p>Trusted by many people.... </p>
+                        <p>The Better place to Start the Trade</p>
                         <h2>Start investing Today </h2>
                     </div>
                     <div className="heading">
@@ -213,7 +213,7 @@ export default function Home() {
 
 
             <div className="Home-MultiCarousel-Container">
-                <h1>Clients’ Testimonials</h1>
+                <h1>Client’s Testimonials</h1>
                 <div className="slider-wrapper">
                     <FontAwesomeIcon className='carousel-navigator-left' icon={faArrowLeftLong} onClick={() => setSlideShifter(-1)} />
                     <div className="slider-container">

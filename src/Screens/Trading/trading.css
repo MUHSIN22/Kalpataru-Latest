@@ -179,7 +179,7 @@
   }
   .Trading .trading-section-1 a {
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .Trading .trading-section-2 p {
     font-size: 1.5rem;
@@ -221,11 +221,12 @@
   .Trading .trading-section-1 {
     width: 95%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
   }
   .Trading .trading-section-1 .trading-section-1-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .Trading .trading-section-1 .trading-section-1-image {
     width: 100%;
@@ -238,10 +239,11 @@
   }
   .Trading .trading-section-1 .trading-section-1-content {
     width: 100%;
+    gap: 0;
   }
   .Trading .trading-section-1 .trading-section-1-content p {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   .Trading .trading-section-1 a {

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Accordion from '../../Components/Accordion/Accordion'
 import BannerSecondary from '../../Components/BannerSecondary/BannerSecondary'
 import './Services.css'
@@ -6,26 +6,32 @@ import { Link } from "react-router-dom";
 export default function Services() {
   const topCardRef = useRef();
   const bottomCardRef = useRef();
+  const topContent = useRef();
+  const bottomContent = useRef();
   let isSwap = false;
 
   const swapTheCard = () => {
     if(!isSwap){
-      console.log('here');
       topCardRef.current.style.transform = "translateX(-55%)"
       bottomCardRef.current.style.transform = "translateX(55%)"
       setTimeout(() => {
         bottomCardRef.current.style.zIndex = '3'
         topCardRef.current.style.transform = "translateX(5%)"
         bottomCardRef.current.style.transform = "translateX(-5%)"
+        topContent.current.style.opacity = 0
+        bottomContent.current.style.opacity = 1
       },300)
       isSwap = true;
     }else{
       bottomCardRef.current.style.transform = "translateX(-55%)"
       topCardRef.current.style.transform = "translateX(55%)"
+      
       setTimeout(() => {
         bottomCardRef.current.style.zIndex = '1'
         bottomCardRef.current.style.transform = "translateX(5%)"
         topCardRef.current.style.transform = "translateX(-5%)"
+        topContent.current.style.opacity = 1
+        bottomContent.current.style.opacity = 0
       },300)
       isSwap = false;
     }
@@ -58,7 +64,7 @@ export default function Services() {
                 <img src="/images/services/pention.png" alt="" className="pension-img" />
                 <div className="card-content">
                   <h1>National Pension Scheme</h1>
-                  <p >
+                  <p ref={topContent}>
                     The Government of India established the National Pension System (NPS) 
                     so that all participants would receive a steady stream of money once they 
                     reached retirement age. The PFRDA (Pension Fund Regulatory and Development Authority) 
@@ -68,16 +74,16 @@ export default function Services() {
                 </div>
               </div>
               <div className="bottom-card" ref={bottomCardRef}>
-                <p >
-                    It was introduced by the government in 
-                    2004. Initially, it was an exclusive scheme 
-                    available only to government employees. 
-                    However, in 2009, NPS in India was made 
-                    available to employees beyond the public 
-                    sector. It allows you to invest in the 
-                    scheme throughout your employment.
-                  </p>
-                  <button className="btn-see-more" onClick={swapTheCard}>See Less</button>
+                    <p ref={bottomContent}>
+                      It was introduced by the government in 
+                      2004. Initially, it was an exclusive scheme 
+                      available only to government employees. 
+                      However, in 2009, NPS in India was made 
+                      available to employees beyond the public 
+                      sector. It allows you to invest in the 
+                      scheme throughout your employment.
+                    </p>
+                    <button className="btn-see-more" onClick={swapTheCard}>See Less</button>
               </div>
             </div>
             <div className="section-2">

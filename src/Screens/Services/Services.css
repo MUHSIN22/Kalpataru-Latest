@@ -154,7 +154,13 @@
     padding: 1rem;
     border-radius: 20px;
 }
-
+.services-page .top-card p,
+.services-page .bottom-card p{
+  transition: all 0.3s ease;
+}
+.services-page .bottom-card p{
+  opacity: 0;
+}
 .services-page .top-card {
     transform: translateX(-5%);
     z-index: 2;

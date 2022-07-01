@@ -23,3 +23,8 @@ border-radius: 0.2rem;
 .FlotingButton .flotingButton a:hover{
     background-color: #d7373d;
 }
+@media only screen and (max-width: 500px) {
+    .FlotingButton{
+        display: none;
+    }
+}

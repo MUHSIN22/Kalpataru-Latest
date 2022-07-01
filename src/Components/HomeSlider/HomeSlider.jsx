@@ -8,7 +8,7 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children, slideShi
     const [marginLeft,setMarginLeft] = useState(0)
     let posX1,posX2;
     let threshold = 50;
-    let cw,ic;
+    let cw=0,ic=5;
     let cardIndex = 0;
 
     useEffect(() => {
@@ -67,17 +67,12 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children, slideShi
 
     const shiftSlide = (direction) => {
         if(direction === -1){
-            console.log("---------------------1");
-            console.log(cardIndex,sliderRef.current.children.length,itemsPerWindow);
-            if(cardIndex > -(sliderRef.current.children.length - itemsPerWindow)){
-                console.log('ic');
-                console.log(gridWidth);
-                setMarginLeft((prev) => prev - gridWidth);   
+            if(cardIndex > -(ic - itemsPerWindow)){
+                setMarginLeft((prev) => prev - cw);   
                 cardIndex--;
             }
             // if(cardIndex >= )
         }else{
-            console.log("1111111111111111111111");
             if(cardIndex < 0){
                 setMarginLeft((prev) => prev + cw);   
                 cardIndex++;

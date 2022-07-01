@@ -1228,7 +1228,9 @@
     .home-page .home-banner .banner-content a {
         width: 80%;
     }
-
+    .heading .wrapper {
+        margin-left: -1rem;
+    }
     .home-page .welcome-content h1 {
         font-size: 1.6rem;
         width: 100%;
@@ -1393,5 +1395,9 @@
     .faq-section .faq-wrapper{
         width: 100%;
         margin-top: 1rem;
+    }
+    .Home-MultiCarousel-Container .carousel-navigator-left,
+    .Home-MultiCarousel-Container .carousel-navigator-right{
+        display: none;
     }
 }

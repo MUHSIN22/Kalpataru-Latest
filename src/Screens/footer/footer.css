@@ -125,7 +125,13 @@
     color: #FFFFFF;
     text-decoration: none;
 }
-
+.Footer .call-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Footer .call-wrapper p{
+    margin-bottom: 0;
+}
 @media only screen and (max-width: 1400px) {
     .Footer .socialmedia-icon{
         padding-top: 1rem;

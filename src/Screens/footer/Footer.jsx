@@ -74,10 +74,12 @@ export default function Footer() {
 
         </div>
         <div className="section-6">
-          <p>Call Us:</p>
-         <a href="tel:+91-9425008895 ">9425008895</a>
-        <a href="tel:+91-0755-4276725"> 0755-4276725</a>
-       <a href='tel:+91-0755-4276726'>0755-4276726</a>
+          <div className="call-wrapper">
+            <p>Call Us:</p>
+            <a href="tel:+91-9425008895 ">9425008895, </a>
+            <a href="tel:+91-0755-4276725">0755-4276725, </a>
+            <a href='tel:+91-0755-4276726'>0755-4276726</a>
+          </div>
        <p>Email Us: <a href = "kmlho@kalpatarumulti.com">kmlho@kalpatarumulti.com</a></p>
         </div>
       </div>

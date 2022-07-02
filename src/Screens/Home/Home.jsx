@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="banner-content">
                     <div className="top-content">
                         {/* <img src='/images/home-logo.png' alt='' /> */}
-                        <p>The Better place to Start the Trade</p>
+                        <p>The better place to start the trade...</p>
                         <h2>Start investing Today </h2>
                     </div>
                     <div className="heading">

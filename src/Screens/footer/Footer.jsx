@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import {AiFillLinkedin, AiOutlineTwitter, AiFillFacebook} from 'react-icons/ai'
+import {BsInstagram} from 'react-icons/bs'
 import './footer.css'
 export default function Footer() {
   const [footerBg,setFooterBg] = useState("")
@@ -15,10 +18,25 @@ export default function Footer() {
   return (
     <div className='Footer' style={{ backgroundImage: `url("/images/${footerBg}")` }}>
       <div className="socialmedia-icon">
-       <a href='https://www.facebook.com/kalpatarumultiplerltd'><Facebook/></a> 
-       <a href='https://www.instagram.com/kalpataru_multiplier_ltd/' ><Instagram /></a> 
+        <a href='https://www.facebook.com/kalpatarumultiplerltd'><Facebook/></a> 
+        <a href='https://www.instagram.com/kalpataru_multiplier_ltd/' ><Instagram /></a> 
         <a href='https://www.linkedin.com/company/kalpatarumultiplierltd/' ><LinkedIn /> </a>
         <a href='https://twitter.com/Kalpataru_Multi' ><Twitter /></a>
+      </div>
+
+      <div className="socialmedia-icon-mobile">
+        <a href='https://www.facebook.com/kalpatarumultiplerltd'>
+          <AiFillFacebook/>
+        </a> 
+        <a href='https://www.instagram.com/kalpataru_multiplier_ltd/' >
+          <BsInstagram/>
+        </a> 
+        <a href='https://www.linkedin.com/company/kalpatarumultiplierltd/' >
+          <AiFillLinkedin />
+        </a>
+        <a href='https://twitter.com/Kalpataru_Multi' >
+          <AiOutlineTwitter />
+        </a>
       </div>
       <div className="section-2">
         <div className="section-2-image">
@@ -75,10 +93,11 @@ export default function Footer() {
         </div>
         <div className="section-6">
           <div className="call-wrapper">
-            <p>Call Us:</p>
-            <a href="tel:+91-9425008895 ">9425008895, </a>
+            <p>Call Us:  
+            <a href="tel:+91-9425008895 "> 9425008895, </a>
             <a href="tel:+91-0755-4276725">0755-4276725, </a>
             <a href='tel:+91-0755-4276726'>0755-4276726</a>
+            </p>
           </div>
        <p>Email Us: <a href = "kmlho@kalpatarumulti.com">kmlho@kalpatarumulti.com</a></p>
         </div>

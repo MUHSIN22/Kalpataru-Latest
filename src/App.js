@@ -29,6 +29,8 @@ import Services from "./Screens/Services/Services";
 import InvestorCharter from "./Screens/InvestorCharter/InvestorCharter";
 import BlogMain from "./Screens/blogsMain/BlogMain";
 import FlotingButton from "./Screens/floatingButton/FlotingButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
 
@@ -36,6 +38,9 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
+        <a href="tel:+919399449409" className="btn-floating-call">
+          <FontAwesomeIcon icon={faPhone} />
+        </a>
         <Routes>
           <Route path="/applumutualfund" element={<ApplyMutualFund />} />
           <Route path='/applymatualfundlink' element={<Applymatualfundlink/>} />
@@ -71,7 +76,7 @@ function App() {
           <Route path='/blogs-main' element={<BlogMain/>} />
           <Route path='/floating-button' element={<FlotingButton/>} />
         </Routes>
-    <Footer/>
+      <Footer/>
       </Router>
     </div>
   );

@@ -5,6 +5,8 @@ import './Header.css'
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useScrollToTop } from '../../ScrollToTop'
+import {AiFillLinkedin, AiOutlineTwitter, AiFillFacebook} from 'react-icons/ai'
+import {BsInstagram} from 'react-icons/bs'
 
 export default function Header() {
     const hamRef = useRef(null);
@@ -101,11 +103,23 @@ export default function Header() {
                         </li>
                     ))
                 }
-                <li className='nav-btn-wrapper'>
+                <li className='nav-item nav-btn-item'>
                     <Link to='/login' className="btn-nav">Login</Link>
-                </li>
-                <li className='nav-btn-wrapper'>
                     <a href=' https://ekyc.kalpatarumulti.com/ipo' className="btn-nav">IPO</a>
+                </li>
+                <li className="social-connect">
+                    <a href='https://www.facebook.com/kalpatarumultiplerltd'>
+                        <AiFillFacebook />
+                    </a>
+                    <a href='https://www.instagram.com/kalpataru_multiplier_ltd/' >
+                        <BsInstagram />
+                    </a>
+                    <a href='https://www.linkedin.com/company/kalpatarumultiplierltd/' >
+                        <AiFillLinkedin />
+                    </a>
+                    <a href='https://twitter.com/Kalpataru_Multi' >
+                        <AiOutlineTwitter />
+                    </a>
                 </li>
             </ul>
             <ul className="hamburger" ref={hamRef} onClick={hamburgerClickHandler}>

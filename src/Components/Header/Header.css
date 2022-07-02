@@ -45,7 +45,7 @@
     cursor: pointer;
     border: none;
     color: black;
-   
+    margin: 0 0.5rem;
 }
 
 .header-container .nav-item {
@@ -115,7 +115,9 @@
 .hamburger {
     display: none;
 }
-
+.header-container .social-connect{
+    display: none;
+}
 @media only screen and (max-width: 1240px) {
     .header-container .nav-list {
         gap: 1.5rem;
@@ -125,6 +127,7 @@
 @media only screen and (max-width: 920px) {
     .header-container {
         height: 5rem;
+        background: linear-gradient(270deg, #C53F3F 0%, #FFFFFF 72.38%);
     }
     .nav-btn-wrapper{
         height: 3rem;
@@ -138,7 +141,7 @@
         position: absolute;
         top: 5rem;
         right: 0;
-         background: #d7373d;
+         background: #C53F3F;
         height: calc(100vh - 5rem);
         gap: 0;
         justify-content: flex-start;
@@ -164,6 +167,13 @@
         align-items: flex-start;
     }
 
+    .header-container .nav-btn-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+
+    }
     .nav-item-expand {
         pointer-events: none;
     }
@@ -249,5 +259,25 @@
     .header-container .btn-nav {
         padding: 0.5rem 1.5rem;
         width: 8rem;
+        margin-left: 0;
+    }
+    .header-container .social-connect{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+        width: 100%;
+    }
+    .header-container .social-connect a{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header-container .nav-item {
+        padding: 0.6rem 1rem;
+    }
+    .header-container .btn-nav {
+        padding: 0.5rem 1.5rem;
+        text-align: center;
     }
 }

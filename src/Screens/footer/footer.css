@@ -132,6 +132,9 @@
 .Footer .call-wrapper p{
     margin-bottom: 0;
 }
+.Footer .socialmedia-icon-mobile{
+    display: none;
+}
 @media only screen and (max-width: 1400px) {
     .Footer .socialmedia-icon{
         padding-top: 1rem;
@@ -153,6 +156,9 @@
     }
 }
 @media only screen and (max-width:500px) {
+    .Footer{
+        padding-top: 9rem;
+    }
     .Footer .section-2{
         display: flex;
         flex-direction: column;
@@ -187,11 +193,25 @@
     }
     .Footer .socialmedia-icon {
         justify-content: center;
-        padding: 0rem;
-        margin-top: 9rem;
         font-size: 1rem;
+        width: 16rem;
+        padding: 0;
+        margin-bottom: 1rem;
+        display: none;
     }
     .Footer .socialmedia-icon svg{
         transform: scale(1);
+    }
+    .Footer .socialmedia-icon-mobile{
+        display: flex;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+    .Footer .socialmedia-icon-mobile a{
+        color: #fff;
+    }
+    .Footer .section-4 a,
+    .Footer .section-5 a {
+        font-size: 0.9rem;
     }
 }

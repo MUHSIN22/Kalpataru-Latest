@@ -121,6 +121,10 @@
     .investor-banner .main-title {
         font-size: 1.8rem;
     }
+    .investor-attention .section-title {
+        color: #d7373d;
+        text-align: center;
+    }
     .investor-banner .content-section{
         width: 100%;
         display: flex;

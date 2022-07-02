@@ -6,9 +6,10 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children, slideShi
     const [gridWidth,setGridWidth] = useState(0)
     const [itemCount,setItemCount] = useState(0)
     const [marginLeft,setMarginLeft] = useState(0)
+    const [ci,setCI] = useState(0)
     let posX1,posX2;
     let threshold = 50;
-    let cw=0,ic=5;
+    let cw,ic;
     let cardIndex = 0;
 
     useEffect(() => {
@@ -67,15 +68,17 @@ export default function HomeSlider({itemMargin,itemsPerWindow,children, slideShi
 
     const shiftSlide = (direction) => {
         if(direction === -1){
+            console.log(ci,ic,itemsPerWindow);
             if(cardIndex > -(ic - itemsPerWindow)){
                 setMarginLeft((prev) => prev - cw);   
                 cardIndex--;
+                setCI((prev) => prev - 1)
             }
-            // if(cardIndex >= )
         }else{
             if(cardIndex < 0){
-                setMarginLeft((prev) => prev + cw);   
-                cardIndex++;
+                setMarginLeft((prev) => prev + cw); 
+                cardIndex++  
+                setCI((prev) => prev + 1)
             }
         }
     }

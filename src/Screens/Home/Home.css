@@ -53,22 +53,13 @@
 }
 
 @keyframes move {
-    25% {
-        transform: translateY(-40px);
-    }
-
     50% {
-        transform: translateY(-80px);
-    }
-
-    75% {
-        transform: translateY(-120px);
+        transform: translateY(-102%);
     }
 
     100% {
-        transform: translateY(-160px);
+        transform: translateY(-220%);
     }
-
 }
 
 .heading {
@@ -111,6 +102,8 @@
 .home-page .home-banner .banner-content h1 {
     font-size: 2.8rem;
     font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
 }
 
 .home-page .home-banner .banner-content p {
@@ -125,14 +118,16 @@
 }
 
 .home-page .home-banner .banner-content a {
-    width: 60%;
+    width: max-content;
     text-decoration: none;
     color: #FFF6EA;
     background-color: #103E60;
     text-align: center;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 10px;
+    font-weight: 700;
     font-size: 1.5rem;
+    padding: 0.8rem 3rem;
 }
 
 .home-page .service-section .service-content h1 {
@@ -1211,27 +1206,30 @@
     }
 
     .home-page .home-banner .banner-content h1 {
-        font-size: 1.8rem;
-        width: 100%;
+        font-size: 1.5rem;
+        width: max-content;
     }
 
     .home-page .home-banner .banner-content p {
         width: 100%;
         margin-bottom: 0;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .home-page .home-banner .banner-content a {
         padding: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .home-page .home-banner .banner-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
     }
     .home-page .home-banner .banner-content a {
         width: 80%;
     }
     .heading .wrapper {
-        margin-left: -1rem;
+        margin-left: 0.5rem;
     }
     .home-page .welcome-content h1 {
         font-size: 1.6rem;
@@ -1248,6 +1246,7 @@
     }
     .home-page .home-banner .heading{
         gap: 0;
+        height: 1.5rem;
     }
     .home-page .features-section {
         width: 100%;
@@ -1401,5 +1400,9 @@
     .Home-MultiCarousel-Container .carousel-navigator-left,
     .Home-MultiCarousel-Container .carousel-navigator-right{
         display: none;
+    }
+    .heading .wrapper {
+        height: 100%;
+        animation: move 7s ease-in-out infinite alternate;
     }
 }
